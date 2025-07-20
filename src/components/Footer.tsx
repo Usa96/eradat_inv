@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { SiX } from 'react-icons/si';
 import { TwitterIcon, InstagramIcon, LinkedinIcon, MailIcon, PhoneIcon, MapPinIcon, LockIcon } from 'lucide-react';
 export const Footer = () => {
   return <footer className="bg-black text-amber-50 pt-12 pb-6">
@@ -11,7 +12,7 @@ export const Footer = () => {
                 ERADAT
                 - International Real Estate Investment Company 
               </h3>
-              <div className="w-24 h-24 bg-amber-900/20 rounded-md flex items-center justify-center mb-4 overflow-hidden">
+              <div className="w-28 h-28 bg-amber-900/20 rounded-md flex items-center justify-center mb-4 overflow-hidden">
                 <img
                   src="/assets/white_logo.png"
                   alt="Company Logo"
@@ -22,13 +23,17 @@ export const Footer = () => {
                 Building wealth through strategic real estate investments
               </p>
               <div className="flex space-x-4 mb-6">
-                <a href="#" className="text-white hover:text-amber-100 transition-colors" aria-label="Twitter">
-                  <TwitterIcon size={20} />
+                <a
+                  href="https://x.com/Eradatkw"
+                  className="text-white hover:text-amber-100 transition-colors"
+                  aria-label="X (Twitter)"
+                >
+                  <SiX size={20} />
                 </a>
-                <a href="#" className="text-white hover:text-amber-100 transition-colors" aria-label="Instagram">
+                <a href="https://www.instagram.com/eradatkw/" className="text-white hover:text-amber-100 transition-colors" aria-label="Instagram">
                   <InstagramIcon size={20} />
                 </a>
-                <a href="#" className="text-white hover:text-amber-100 transition-colors" aria-label="LinkedIn">
+                <a href="https://www.linkedin.com/company/99874090/admin/page-posts/published/" className="text-white hover:text-amber-100 transition-colors" aria-label="LinkedIn">
                   <LinkedinIcon size={20} />
                 </a>
               </div>
