@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FacebookIcon, TwitterIcon, InstagramIcon, LinkedinIcon, MailIcon, PhoneIcon, MapPinIcon, LockIcon } from 'lucide-react';
+import { TwitterIcon, InstagramIcon, LinkedinIcon, MailIcon, PhoneIcon, MapPinIcon, LockIcon } from 'lucide-react';
 export const Footer = () => {
   return <footer className="bg-black text-amber-50 pt-12 pb-6">
       <div className="container mx-auto px-4">
@@ -8,7 +8,8 @@ export const Footer = () => {
           <div>
             <div className="mb-6">
               <h3 className="text-xl font-bold mb-4 text-white">
-                ERADAT - International Real Estate Investment Company 
+                ERADAT
+                - International Real Estate Investment Company 
               </h3>
               <div className="w-24 h-24 bg-amber-900/20 rounded-md flex items-center justify-center mb-4 overflow-hidden">
                 <img
@@ -21,9 +22,6 @@ export const Footer = () => {
                 Building wealth through strategic real estate investments
               </p>
               <div className="flex space-x-4 mb-6">
-                <a href="#" className="text-white hover:text-amber-100 transition-colors" aria-label="Facebook">
-                  <FacebookIcon size={20} />
-                </a>
                 <a href="#" className="text-white hover:text-amber-100 transition-colors" aria-label="Twitter">
                   <TwitterIcon size={20} />
                 </a>
