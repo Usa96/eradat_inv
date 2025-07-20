@@ -381,56 +381,6 @@ const Properties = () => {
                           </span>
                         </div>
                       </div>
-                      
-                    </div>
-                  </div>
-                  {/* Investment Opportunity */}
-                  <div className="mb-8 bg-amber-50 p-6 rounded-lg">
-                    <h3 className="text-xl font-semibold mb-4 text-amber-900">
-                      Investment Opportunity
-                    </h3>
-                    <p className="text-gray-700 mb-4">
-                      This property offers a compelling investment opportunity
-                      with strong cash flow potential and projected appreciation
-                      in a growing market.
-                    </p>
-                    <ul className="space-y-2">
-                      <li className="flex items-start">
-                        <div className="h-5 w-5 rounded-full bg-amber-200 flex items-center justify-center mt-1 mr-3 flex-shrink-0">
-                          <span className="h-2.5 w-2.5 rounded-full bg-amber-800"></span>
-                        </div>
-                        <span className="text-gray-700">
-                          Projected annual cash-on-cash return of{' '}
-                          {selectedProperty.roi}
-                        </span>
-                      </li>
-                      
-                      <li className="flex items-start">
-                        <div className="h-5 w-5 rounded-full bg-amber-200 flex items-center justify-center mt-1 mr-3 flex-shrink-0">
-                          <span className="h-2.5 w-2.5 rounded-full bg-amber-800"></span>
-                        </div>
-                        <span className="text-gray-700">
-                          Professional property management with{' '}
-                          {selectedProperty.occupancy} current occupancy
-                        </span>
-                      </li>
-                    </ul>
-                  </div>
-                  {/* CTA */}
-                  <div className="flex flex-col md:flex-row gap-4 justify-between items-center border-t border-gray-200 pt-8">
-                    <div>
-                      <h4 className="text-lg font-semibold text-gray-900">
-                        Ready to invest in this property?
-                      </h4>
-                    </div>
-                    <div className="flex space-x-4">
-                      <button className="bg-gray-200 hover:bg-gray-300 text-gray-800 font-medium py-3 px-6 rounded-md transition-colors">
-                        Download Prospectus
-                      </button>
-                      <button className="bg-amber-800 hover:bg-amber-900 text-white font-medium py-3 px-6 rounded-md transition-colors flex items-center">
-                        Start Investing
-                        <ArrowRightIcon className="ml-2 h-5 w-5" />
-                      </button>
                     </div>
                   </div>
                 </div>
