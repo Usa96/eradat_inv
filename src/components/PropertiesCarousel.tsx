@@ -7,59 +7,59 @@ interface Property {
   title: string;
   location: string;
   description: string;
-  roi: string;
-  term: string;
+
 }
 export const PropertiesCarousel = () => {
   const properties: Property[] = [{
     id: 1,
-    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80',
+    image: '/assets/durrar.jpg',
     title: 'Durrar Complex',
-    location: 'Austin, TX',
-    description: 'Luxury multi-family complex in the heart of Austin, a tech corridor, with strong rental demand. The price is $50,000.',
-    roi: '14%',
-    term: '36 months'
+    location: 'Kuwait',
+    description: 'A well-established residential complex offering comfortable living spaces in a convenient location.',
+
   }, {
     id: 2,
-    image: 'https://images.unsplash.com/photo-1605146769289-440113cc3d00?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80',
-    title: 'Domus Residential Complex',
+    image: '/assets/domus.jpg',
+    title: 'Domus 1 & 2',
     location: 'Dubai, UAE',
-    description: "Waterfront property with premium amenities in Miami's fastest-growing neighborhood. The price is $75,000.",
-    roi: '12%',
-    term: '24 months'
+    description: "Modern residential buildings known for their architectural design and strategic location.",
+
   }, {
     id: 3,
-    image: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80',
-    title: 'Fintas Residential Complex',
-    location: 'Fintas, Kuwait',
-    description: 'Exclusive beachfront villas with panoramic ocean views and exceptional rental history.',
-    roi: '16%',
-    term: '48 months'
+    image: '/assets/farwaniya.jpg',
+    title: 'Farwaniya Residential Building',
+    location: 'Farwaniya, Kuwait',
+    description: 'Residential property located in the heart of Farwaniya district, ideal for long-term tenants.',
+
   }, {
     id: 4,
-    image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80',
-    title: 'Ibn Khaldoon Complex',
-    location: 'Hawally, Kuwait',
-    description: 'My modern high-rise in Denver, downtown, offers stunning mountain views and premium finishes. The price is $65,000.',
-    roi: '13%',
-    term: '30 months'
+    image: '/assets/fintas.jpg',
+    title: 'Fintas Residential Complex',
+    location: 'Fintas, Kuwait',
+    description: 'A peaceful residential community offering access to coastal areas and nearby amenities.',
+
   }, {
     id: 5,
-    image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80',
-    title: 'Farwaniya Residential Complex',
+    image: '/assets/manar.jpg',
+    title: 'Al Manar Complex',
     location: 'Farwaniya, Kuwait',
-    description: 'My modern high-rise in Denver, downtown, offers stunning mountain views and premium finishes. The price is $65,000.',
-    roi: '13%',
-    term: '30 months'
+    description: 'Commercial complex offering office and retail space in a strategic business location.',
+
   }, {
     id: 6,
-    image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80',
+    image: '/assets/bneid_al_gar.jpg',
     title: 'Bneid Al Gar Medical Center',
+    location: 'Bneid Al Gar, Kuwait',
+    description: 'State-of-the-art medical complex serving the Bneid Al Gar area with high-quality healthcare services.',
+
+  }, {
+    id: 7,
+    image: '/assets/ibn_khaldoon.jpg',
+    title: 'Ibn Khaldoon Complex',
     location: 'Hawally, Kuwait',
-    description: 'My modern high-rise in Denver, downtown, offers stunning mountain views and premium finishes. The price is $65,000.',
-    roi: '13%',
-    term: '30 months'
-  }];
+    description: 'Commercial property offering flexible spaces for businesses in a well-connected urban area.',
+    },
+];
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
   const nextSlide = () => {
@@ -88,7 +88,7 @@ export const PropertiesCarousel = () => {
     return () => clearInterval(interval);
   }, [currentIndex]);
   return <section id="properties" className="py-20 bg-amber-50">
-      <div className="container mx-auto px-4">
+      <div className="w-full">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-4 text-gray-900">
             Featured Investment Properties
@@ -100,7 +100,7 @@ export const PropertiesCarousel = () => {
         </div>
         <div className="relative">
           {/* Carousel container */}
-          <div className="relative h-[500px] overflow-hidden rounded-xl shadow-xl">
+          <div className="relative h-[800px] overflow-hidden rounded-xl shadow-xl">
             {properties.map((property, index) => <div key={property.id} className={`absolute w-full h-full transition-all duration-500 ease-in-out ${index === currentIndex ? 'opacity-100 translate-x-0' : index < currentIndex ? 'opacity-0 -translate-x-full' : 'opacity-0 translate-x-full'}`}>
                 <div className="relative w-full h-full">
                   <img src={property.image} alt={property.title} className="w-full h-full object-cover" />
@@ -115,20 +115,6 @@ export const PropertiesCarousel = () => {
                     <p className="text-gray-200 mb-6 max-w-2xl">
                       {property.description}
                     </p>
-                    <div className="flex flex-wrap gap-6 mb-6">
-                      <div>
-                        <p className="text-amber-200 text-sm">Expected ROI</p>
-                        <p className="text-white font-semibold">
-                          {property.roi}
-                        </p>
-                      </div>
-                      <div>
-                        <p className="text-amber-200 text-sm">Term</p>
-                        <p className="text-white font-semibold">
-                          {property.term}
-                        </p>
-                      </div>
-                    </div>
                     <Link to={`/properties`} state={{
                   selectedPropertyId: property.id
                 }} className="bg-amber-800 hover:bg-amber-900 text-white px-6 py-2 rounded-md transition-colors inline-block">

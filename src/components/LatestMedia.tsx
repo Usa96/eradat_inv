@@ -10,31 +10,36 @@ interface MediaItem {
   link: string;
 }
 export const LatestMedia = () => {
-  const mediaItems: MediaItem[] = [{
+  const mediaItems: MediaItem[] = [
+  {
     id: 1,
-    image: 'https://images.unsplash.com/photo-1569025690938-a00729c9e1f9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80',
-    title: 'PrimeInvest Expands Portfolio with $50M Acquisition in Austin',
+    image: '',
+    title: 'Lorem Ipsum Dolor Sit Amet',
     date: 'May 15, 2023',
-    excerpt: "PrimeInvest announces the acquisition of a premium multi-family complex in Austin's tech corridor, expanding its Texas portfolio.",
-    source: 'Real Estate Weekly',
+    excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc at convallis cursus, magna nulla blandit justo.',
+    source: 'Lorem Weekly',
     link: '#'
-  }, {
+  },
+  {
     id: 2,
-    image: 'https://images.unsplash.com/photo-1542125387-c71274d94f0a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80',
-    title: 'CEO Interview: The Future of Real Estate Crowdfunding',
+    image: '',
+    title: 'Consectetur Adipiscing Elit',
     date: 'April 3, 2023',
-    excerpt: 'Our CEO discusses how technology is democratizing access to premium real estate investments and what it means for investors.',
-    source: 'Investment Today',
+    excerpt: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+    source: 'Investment Ipsum',
     link: '#'
-  }, {
+  },
+  {
     id: 3,
-    image: 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80',
-    title: 'PrimeInvest Delivers 16% Returns on Miami Property Exit',
+    image: '',
+    title: 'Sed Do Eiusmod Tempor Incididunt',
     date: 'March 12, 2023',
-    excerpt: 'Investors celebrate as PrimeInvest completes successful exit of Miami waterfront property, delivering returns above projections.',
-    source: 'Finance Insider',
+    excerpt: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
+    source: 'Finance Lorem',
     link: '#'
-  }];
+  }
+];
+
   return <section className="py-16 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
@@ -70,9 +75,12 @@ export const LatestMedia = () => {
             </div>)}
         </div>
         <div className="text-center mt-10">
-          <button className="bg-black hover:bg-gray-900 text-amber-100 font-medium py-3 px-8 rounded-md transition-colors">
+          <a
+            href="/media"
+            className="inline-block bg-black hover:bg-gray-900 text-amber-100 font-medium py-3 px-8 rounded-md transition-colors"
+          >
             View All News
-          </button>
+          </a>
         </div>
       </div>
     </section>;

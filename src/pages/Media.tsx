@@ -12,81 +12,91 @@ interface MediaItem {
   featured?: boolean;
 }
 const Media = () => {
-  const mediaItems: MediaItem[] = [{
+  const mediaItems: MediaItem[] = [
+  {
     id: 1,
-    image: 'https://images.unsplash.com/photo-1569025690938-a00729c9e1f9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80',
-    title: 'PrimeInvest Expands Portfolio with $50M Acquisition in Austin',
+    image: 'https://images.unsplash.com/photo-1569025690938-a00729c9e1f9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1770&q=80',
+    title: 'Lorem Ipsum Dolor Sit Amet',
     date: 'May 15, 2023',
-    excerpt: "PrimeInvest announces the acquisition of a premium multi-family complex in Austin's tech corridor, expanding its Texas portfolio.",
-    source: 'Real Estate Weekly',
+    excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod nisi vel orci gravida, sed porttitor libero tristique.',
+    source: 'Lorem Weekly',
     link: '#',
     type: 'press-release',
     featured: true
-  }, {
+  },
+  {
     id: 2,
-    image: 'https://images.unsplash.com/photo-1542125387-c71274d94f0a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80',
-    title: 'CEO Interview: The Future of Real Estate Crowdfunding',
+    image: 'https://images.unsplash.com/photo-1542125387-c71274d94f0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1770&q=80',
+    title: 'Ut Enim Ad Minim Veniam',
     date: 'April 3, 2023',
-    excerpt: 'Our CEO discusses how technology is democratizing access to premium real estate investments and what it means for investors.',
-    source: 'Investment Today',
+    excerpt: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+    source: 'Investment Ipsum',
     link: '#',
     type: 'article'
-  }, {
+  },
+  {
     id: 3,
-    image: 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80',
-    title: 'PrimeInvest Delivers 16% Returns on Miami Property Exit',
+    image: 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?ixlib=rb-4.0.3&auto=format&fit=crop&w=1770&q=80',
+    title: 'Sed Do Eiusmod Tempor Incididunt',
     date: 'March 12, 2023',
-    excerpt: 'Investors celebrate as PrimeInvest completes successful exit of Miami waterfront property, delivering returns above projections.',
-    source: 'Finance Insider',
+    excerpt: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
+    source: 'Finance Lorem',
     link: '#',
     type: 'press-release'
-  }, {
+  },
+  {
     id: 4,
-    image: 'https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80',
-    title: 'Market Trends: Why Multifamily Properties Are Outperforming in 2023',
+    image: 'https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-4.0.3&auto=format&fit=crop&w=1770&q=80',
+    title: 'Quis Nostrud Exercitation Ullamco',
     date: 'February 28, 2023',
-    excerpt: "PrimeInvest's research team analyzes the factors driving strong performance in the multifamily sector despite economic headwinds.",
-    source: 'PrimeInvest Blog',
+    excerpt: 'Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+    source: 'Lorem Blog',
     link: '#',
     type: 'article'
-  }, {
+  },
+  {
     id: 5,
-    image: 'https://images.unsplash.com/photo-1524758870432-af57e54afa26?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80',
-    title: 'Video: Inside Our Latest Development in Denver',
+    image: 'https://images.unsplash.com/photo-1524758870432-af57e54afa26?ixlib=rb-4.0.3&auto=format&fit=crop&w=1770&q=80',
+    title: 'Video: Lorem Ipsum in Action',
     date: 'February 15, 2023',
-    excerpt: 'Take a virtual tour of Highland Towers, our newest luxury residential property in downtown Denver.',
-    source: 'PrimeInvest YouTube',
+    excerpt: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
+    source: 'Lorem YouTube',
     link: '#',
     type: 'video'
-  }, {
+  },
+  {
     id: 6,
-    image: 'https://images.unsplash.com/photo-1478737270239-2f02b77fc618?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80',
-    title: 'Podcast: Real Estate Investing During Economic Uncertainty',
+    image: 'https://images.unsplash.com/photo-1478737270239-2f02b77fc618?ixlib=rb-4.0.3&auto=format&fit=crop&w=1770&q=80',
+    title: 'Podcast: Consectetur Adipiscing Elit',
     date: 'January 20, 2023',
-    excerpt: 'Our CIO discusses strategies for real estate investors to navigate market volatility and position for long-term success.',
-    source: 'The Investment Hour Podcast',
+    excerpt: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+    source: 'The Lorem Podcast',
     link: '#',
     type: 'podcast'
-  }, {
+  },
+  {
     id: 7,
-    image: 'https://images.unsplash.com/photo-1560520031-3a4dc4e9de0c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1773&q=80',
-    title: 'PrimeInvest Named Among Top 10 Real Estate Investment Platforms',
+    image: 'https://images.unsplash.com/photo-1560520031-3a4dc4e9de0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1773&q=80',
+    title: 'Lorem Ipsum Recognized Globally',
     date: 'January 5, 2023',
-    excerpt: 'Industry publication recognizes PrimeInvest for its innovative approach to real estate investing and strong investor returns.',
-    source: 'Financial Technology Review',
+    excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus.',
+    source: 'Tech Review Ipsum',
     link: '#',
     type: 'press-release',
     featured: true
-  }, {
+  },
+  {
     id: 8,
-    image: 'https://images.unsplash.com/photo-1491336477066-31156b5e4f35?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80',
-    title: 'Video: Q4 2022 Investor Briefing',
+    image: 'https://images.unsplash.com/photo-1491336477066-31156b5e4f35?ixlib=rb-4.0.3&auto=format&fit=crop&w=1770&q=80',
+    title: 'Video: Q4 Lorem Briefing',
     date: 'December 15, 2022',
-    excerpt: 'Watch our quarterly investor briefing covering portfolio performance, market outlook, and upcoming investment opportunities.',
-    source: 'PrimeInvest Investor Relations',
+    excerpt: 'Maecenas sed diam eget risus varius blandit sit amet non magna. Integer posuere erat a ante.',
+    source: 'Lorem Investor Relations',
     link: '#',
     type: 'video'
-  }];
+  }
+];
+
   const [activeFilter, setActiveFilter] = useState<string>('all');
   const filteredMedia = mediaItems.filter(item => {
     return activeFilter === 'all' || item.type === activeFilter;
@@ -116,7 +126,7 @@ const Media = () => {
             </h1>
             <p className="text-xl text-amber-100 mb-8">
               Stay updated with the latest news, insights, and announcements
-              from PrimeInvest.
+              from ERADAT.
             </p>
           </div>
         </div>

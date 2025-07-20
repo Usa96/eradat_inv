@@ -7,33 +7,35 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-8">
           <div>
             <div className="mb-6">
-              <h3 className="text-2xl font-bold mb-4 text-amber-200">
-                PrimeInvest
+              <h3 className="text-xl font-bold mb-4 text-white">
+                ERADAT - International Real Estate Investment Company 
               </h3>
-              <div className="w-24 h-24 bg-amber-900/20 rounded-md flex items-center justify-center mb-4">
-                {/* Space for logo */}
-                <span className="text-amber-200 text-lg font-bold">LOGO</span>
+              <div className="w-24 h-24 bg-amber-900/20 rounded-md flex items-center justify-center mb-4 overflow-hidden">
+                <img
+                  src="/assets/white_logo.png"
+                  alt="Company Logo"
+                  className="w-full h-full object-contain"
+                />
               </div>
-              <p className="text-amber-100/80 mb-4">
-                Building wealth through strategic real estate investments since
-                2012.
+              <p className="text-white mb-4">
+                Building wealth through strategic real estate investments
               </p>
               <div className="flex space-x-4 mb-6">
-                <a href="#" className="text-amber-100/60 hover:text-amber-100 transition-colors" aria-label="Facebook">
+                <a href="#" className="text-white hover:text-amber-100 transition-colors" aria-label="Facebook">
                   <FacebookIcon size={20} />
                 </a>
-                <a href="#" className="text-amber-100/60 hover:text-amber-100 transition-colors" aria-label="Twitter">
+                <a href="#" className="text-white hover:text-amber-100 transition-colors" aria-label="Twitter">
                   <TwitterIcon size={20} />
                 </a>
-                <a href="#" className="text-amber-100/60 hover:text-amber-100 transition-colors" aria-label="Instagram">
+                <a href="#" className="text-white hover:text-amber-100 transition-colors" aria-label="Instagram">
                   <InstagramIcon size={20} />
                 </a>
-                <a href="#" className="text-amber-100/60 hover:text-amber-100 transition-colors" aria-label="LinkedIn">
+                <a href="#" className="text-white hover:text-amber-100 transition-colors" aria-label="LinkedIn">
                   <LinkedinIcon size={20} />
                 </a>
               </div>
               <div>
-                <a href="#" className="flex items-center text-amber-100/80 hover:text-amber-100 transition-colors">
+                <a href="#" className="flex items-center text-white hover:text-amber-100 transition-colors">
                   <LockIcon size={16} className="mr-2" />
                   <span>Employee Login</span>
                 </a>
@@ -47,39 +49,24 @@ export const Footer = () => {
               </h3>
               <ul className="space-y-2">
                 <li>
-                  <Link to="/properties" className="text-amber-100/80 hover:text-amber-100 transition-colors">
+                  <Link to="/properties" className="text-white hover:text-amber-100 transition-colors">
                     Properties
                   </Link>
                 </li>
                 <li>
-                  <Link to="/about" className="text-amber-100/80 hover:text-amber-100 transition-colors">
+                  <Link to="/about" className="text-white hover:text-amber-100 transition-colors">
                     About Us
                   </Link>
                 </li>
                 <li>
-                  <Link to="/media" className="text-amber-100/80 hover:text-amber-100 transition-colors">
+                  <Link to="/media" className="text-white hover:text-amber-100 transition-colors">
                     Media
                   </Link>
                 </li>
                 <li>
-                  <Link to="/contact" className="text-amber-100/80 hover:text-amber-100 transition-colors">
+                  <Link to="/contact" className="text-white hover:text-amber-100 transition-colors">
                     Contact
                   </Link>
-                </li>
-                <li>
-                  <a href="#" className="text-amber-100/80 hover:text-amber-100 transition-colors">
-                    FAQ
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-amber-100/80 hover:text-amber-100 transition-colors">
-                    Investment Guide
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-amber-100/80 hover:text-amber-100 transition-colors">
-                    Market Reports
-                  </a>
                 </li>
               </ul>
             </div>
@@ -90,18 +77,18 @@ export const Footer = () => {
               <ul className="space-y-3">
                 <li className="flex items-start">
                   <MapPinIcon className="h-5 w-5 text-amber-100/60 mr-2 flex-shrink-0 mt-0.5" />
-                  <span className="text-amber-100/80">
-                    123 Investment Ave, New York, NY 10001
+                  <span className="text-white">
+                    Salhiya Complex, Qibla, Kuwait.
                   </span>
                 </li>
                 <li className="flex items-center">
                   <PhoneIcon className="h-5 w-5 text-amber-100/60 mr-2 flex-shrink-0" />
-                  <span className="text-amber-100/80">(555) 123-4567</span>
+                  <span className="text-white">(+965) 2239 66666</span>
                 </li>
                 <li className="flex items-center">
                   <MailIcon className="h-5 w-5 text-amber-100/60 mr-2 flex-shrink-0" />
-                  <span className="text-amber-100/80">
-                    info@primeinvest.com
+                  <span className="text-white">
+                    info@eradat.me
                   </span>
                 </li>
               </ul>

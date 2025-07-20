@@ -5,8 +5,7 @@ interface Property {
   id: number;
   title: string;
   location: string;
-  type: 'Residential' | 'Commercial' | 'Mixed-Use';
-  status: 'Available' | 'Funded' | 'Upcoming';
+  type: 'Residential' | 'Commercial' | 'Mixed-Use' | 'Medical';
   image: string;
   description: string;
   price: string;
@@ -23,95 +22,105 @@ const Properties = () => {
   const [filterType, setFilterType] = useState<string>('All');
   const propertiesData: Property[] = [{
     id: 1,
-    title: 'Oakridge Apartments',
-    location: 'Austin, TX',
+    title: 'Durrar Complex',
+    location: 'Kuwait',
     type: 'Residential',
-    status: 'Available',
-    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80',
-    description: "Luxury multi-family complex in the heart of Austin's tech corridor with strong rental demand. This 120-unit property features premium amenities including a resort-style pool, fitness center, and co-working spaces.",
-    price: '$50,000',
+    image: '#',
+    description: "A well-established residential complex offering comfortable living spaces in a convenient location.",
+    price: '$_',
     roi: '14%',
-    term: '36 months',
+    term: '_',
     occupancy: '96%',
-    sqft: '98,000',
-    yearBuilt: '2018',
-    neighborhood: 'Tech District'
+    sqft: '_',
+    yearBuilt: '_',
+    neighborhood: '_'
   }, {
     id: 2,
-    title: 'Riverside Complex',
-    location: 'Miami, FL',
-    type: 'Mixed-Use',
-    status: 'Available',
-    image: 'https://images.unsplash.com/photo-1605146769289-440113cc3d00?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80',
-    description: "Waterfront property with premium amenities in Miami's fastest growing neighborhood. This mixed-use development includes 80 residential units and 15,000 sq ft of prime retail space on the ground floor.",
-    price: '$75,000',
-    roi: '12%',
-    term: '24 months',
+    title: 'Domus 1 & 2',
+    location: 'Dubai, UAE',
+    type: 'Residential',
+    image: '#',
+    description: "Modern residential buildings known for their architectural design and strategic location.",
+    price: '_',
+    roi: '_',
+    term: '_',
     occupancy: '92%',
     sqft: '120,000',
     yearBuilt: '2020',
-    neighborhood: 'Brickell'
+    neighborhood: '_'
   }, {
     id: 3,
-    title: 'Sunset Villas',
-    location: 'San Diego, CA',
+    title: 'Farwaniya',
+    location: 'Kuwait',
     type: 'Residential',
-    status: 'Funded',
-    image: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80',
-    description: 'Exclusive beachfront villas with panoramic ocean views and exceptional rental history. This luxury development consists of 12 high-end villas, each with private access to the beach and premium finishes throughout.',
-    price: '$100,000',
-    roi: '16%',
-    term: '48 months',
-    occupancy: '100%',
+    image: '#',
+    description: 'Residential property located in the heart of Farwaniya district, ideal for long-term tenants.',
+    price: '_',
+    roi: '_',
+    term: '_',
+    occupancy: '_',
     sqft: '45,000',
-    yearBuilt: '2019',
-    neighborhood: 'La Jolla'
+    yearBuilt: '_',
+    neighborhood: '_'
   }, {
     id: 4,
-    title: 'Highland Towers',
-    location: 'Denver, CO',
+    title: 'Fintas Complex',
+    location: 'Kuwait',
     type: 'Residential',
-    status: 'Available',
-    image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80',
-    description: "Modern high-rise in Denver's downtown with stunning mountain views and premium finishes. This 200-unit property features smart home technology, a rooftop lounge, and is within walking distance to major employers.",
-    price: '$65,000',
-    roi: '13%',
-    term: '30 months',
-    occupancy: '94%',
-    sqft: '180,000',
-    yearBuilt: '2017',
-    neighborhood: 'Downtown'
+    image: '#',
+    description: "A peaceful residential community offering access to coastal areas and nearby amenities.",
+    price: '_',
+    roi: '_',
+    term: '_',
+    occupancy: '_',
+    sqft: '_',
+    yearBuilt: '_',
+    neighborhood: '_'
   }, {
     id: 5,
-    title: 'Madison Square Office',
-    location: 'New York, NY',
+    title: 'Al Manar Complex',
+    location: 'Kuwait',
     type: 'Commercial',
-    status: 'Upcoming',
-    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80',
-    description: "Prime office space in Manhattan's bustling business district. This Class A office building offers 50,000 sq ft of modern workspace with high-end finishes and state-of-the-art technology infrastructure.",
-    price: '$120,000',
-    roi: '11%',
-    term: '60 months',
-    occupancy: '88%',
-    sqft: '50,000',
-    yearBuilt: '2015',
-    neighborhood: 'Midtown'
+    image: '#',
+    description: 'Commercial complex offering office and retail space in a strategic business location.',
+    price: '—',
+    roi: '—',
+    term: '—',
+    occupancy: '—',
+    sqft: '—',
+    yearBuilt: '—',
+    neighborhood: '—'
   }, {
     id: 6,
-    title: 'Gateway Shopping Center',
-    location: 'Atlanta, GA',
+    title: 'Bneid Al Gar Clinic',
+    location: 'Kuwait',
+    type: 'Medical',
+    image: '#',
+    description: 'State-of-the-art medical complex serving the Bneid Al Gar area with high-quality healthcare services.',
+    price: '—',
+    roi: '—',
+    term: '—',
+    occupancy: '—',
+    sqft: '—',
+    yearBuilt: '—',
+    neighborhood: '—'
+  },
+  {
+    id: 7,
+    title: 'Ibn Khaldoun Complex',
+    location: 'Kuwait',
     type: 'Commercial',
-    status: 'Available',
-    image: 'https://images.unsplash.com/photo-1555636222-cae831e670b3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80',
-    description: "Established retail center in Atlanta's rapidly growing northern suburbs. This 85,000 sq ft shopping center is anchored by national tenants with long-term leases and features excellent visibility and access.",
-    price: '$85,000',
-    roi: '15%',
-    term: '42 months',
-    occupancy: '97%',
-    sqft: '85,000',
-    yearBuilt: '2010',
-    neighborhood: 'Buckhead'
-  }];
+    image: '#',
+    description: 'Commercial property offering flexible spaces for businesses in a well-connected urban area.',
+    price: '—',
+    roi: '—',
+    term: '—',
+    occupancy: '—',
+    sqft: '—',
+    yearBuilt: '—',
+    neighborhood: '—'
+  }
+];
   // Handle property selection from carousel
   useEffect(() => {
     if (location.state && location.state.selectedPropertyId) {
@@ -177,11 +186,6 @@ const Properties = () => {
               <div className="bg-white rounded-lg shadow-lg overflow-hidden">
                 <div className="relative h-96">
                   <img src={selectedProperty.image} alt={selectedProperty.title} className="w-full h-full object-cover" />
-                  <div className="absolute top-4 right-4">
-                    <span className={`inline-block px-3 py-1 rounded-full text-sm font-medium ${selectedProperty.status === 'Available' ? 'bg-green-100 text-green-800' : selectedProperty.status === 'Funded' ? 'bg-blue-100 text-blue-800' : 'bg-amber-100 text-amber-800'}`}>
-                      {selectedProperty.status}
-                    </span>
-                  </div>
                 </div>
                 <div className="p-6">
                   <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-6">
@@ -280,11 +284,6 @@ const Properties = () => {
               {filteredProperties.map(property => <div key={property.id} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow cursor-pointer" onClick={() => setSelectedProperty(property)}>
                   <div className="relative h-60">
                     <img src={property.image} alt={property.title} className="w-full h-full object-cover" />
-                    <div className="absolute top-3 right-3">
-                      <span className={`inline-block px-3 py-1 rounded-full text-xs font-medium ${property.status === 'Available' ? 'bg-green-100 text-green-800' : property.status === 'Funded' ? 'bg-blue-100 text-blue-800' : 'bg-amber-100 text-amber-800'}`}>
-                        {property.status}
-                      </span>
-                    </div>
                   </div>
                   <div className="p-5">
                     <h3 className="text-xl font-semibold mb-1 text-gray-900">

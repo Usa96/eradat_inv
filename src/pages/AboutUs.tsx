@@ -12,39 +12,34 @@ interface LeaderProfile {
 const AboutUs = () => {
   const leadershipTeam: LeaderProfile[] = [{
     id: 1,
-    name: 'Alexandra Reynolds',
-    title: 'Chief Executive Officer',
-    image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=776&q=80',
-    bio: 'Alexandra brings over 20 years of experience in real estate investment and development. Prior to founding PrimeInvest, she served as Managing Director at Global Capital Partners, where she oversaw $2B in real estate acquisitions.',
-    linkedin: '#'
+    name: 'Dr. Sulaiman Tareq Al AbdulJader',
+    title: 'Chairman',
+    image: '/assets/team/sulaiman.png',
+    bio: 'A seasoned leader in finance, investment, and academia. He serves on the boards of major firms and advises institutions. His research focuses on alternative investments and financial economics.',
   }, {
     id: 2,
-    name: 'Marcus Chen',
-    title: 'Chief Investment Officer',
-    image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80',
-    bio: "Marcus oversees all investment strategies and property acquisitions. With a background in finance and real estate economics, he has developed proprietary analytics models that drive PrimeInvest's market-beating returns.",
-    linkedin: '#'
+    name: 'Waleed Hamad Al Sumait',
+    title: 'Vice Chairman',
+    image: '/assets/team/waleed.png',
+    bio: "Brings over 20 years of experience in investment and financial services. He holds a BBA from the U.S. and several certifications, with active participation in top-tier industry conferences.",
   }, {
     id: 3,
-    name: 'Sophia Williams',
-    title: 'Chief Operating Officer',
-    image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80',
-    bio: "Sophia manages day-to-day operations and investor relations. Her background in both technology and real estate has been instrumental in developing PrimeInvest's streamlined investment platform.",
-    linkedin: '#'
+    name: 'Bader Al Hajeri',
+    title: 'Chief Executive Officer',
+    image: '/assets/team/bader.png',
+    bio: "Has 16+ years of experience in real estate and public relations. Oversees real estate investments and maintains strong relationships across government and private sectors.",
   }, {
     id: 4,
-    name: 'James Rodriguez',
-    title: 'Head of Property Development',
-    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
-    bio: 'James leads our property development initiatives, bringing 15 years of experience in construction management and architectural design. He specializes in value-add renovations that maximize property potential.',
-    linkedin: '#'
+    name: 'Sulaiman Al Awdah',
+    title: 'Board Member',
+    image: '/assets/team/aoudah.png',
+    bio: 'Over 15 years of expertise in corporate finance, M&A, and strategic planning. Certified in CGIA, CST, and CIDA, with strong IFRS knowledge and board-level insight.',
   }, {
     id: 5,
-    name: 'Emily Nakamura',
-    title: 'Chief Financial Officer',
-    image: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
-    bio: 'Emily brings over 15 years of financial leadership experience to PrimeInvest. Her expertise in capital markets and investor relations has been instrumental in securing funding for our largest acquisitions and development projects.',
-    linkedin: '#'
+    name: 'Saad Nasser Al Muneefi',
+    title: 'Board Member',
+    image: '/assets/team/saad.png',
+    bio: 'An experienced finance executive with a BBA and 15+ years in Kuwait’s financial sector. Board member of First Securities Brokerage and Global Investment House.',
   }];
   return <main>
       {/* Hero Section */}
@@ -53,11 +48,10 @@ const AboutUs = () => {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              About PrimeInvest
+              About ERADAT
             </h1>
             <p className="text-xl text-amber-100">
-              Building a future of financial freedom through strategic real
-              estate investments.
+              ERADAT strives to become Kuwait's premier listed real estate investment company, operating in accordance with Sharia principles. Our focus is on acquiring high-quality, sustainable, and diversified income-generating properties.
             </p>
           </div>
         </div>
@@ -71,15 +65,14 @@ const AboutUs = () => {
                 Our Vision
               </h2>
               <p className="text-gray-800 mb-4">
-                To democratize access to institutional-quality real estate
-                investments, creating pathways to financial independence for
-                investors of all backgrounds.
+                Our vision is to become a leading real estate investment company that 
+                serves as a pass-through vehicle for premium, 
+                income-producing assets — offering a diversified investor base access to 
+                institutional-quality opportunities with sustainable 
+                and frequent cash distributions.
               </p>
               <p className="text-gray-800">
-                We envision a world where premium real estate investment
-                opportunities are no longer exclusive to the ultra-wealthy, but
-                accessible to anyone seeking to build long-term wealth through
-                property ownership.
+                We are committed to democratizing real estate investing by making long-term wealth creation through high-performing properties accessible to discerning investors seeking financial independence, not just the ultra-wealthy.
               </p>
             </div>
             <div className="bg-gray-900 p-8 rounded-lg shadow-md text-white">
@@ -92,10 +85,9 @@ const AboutUs = () => {
                 for our investors.
               </p>
               <p className="text-gray-100">
-                Through rigorous analysis, market expertise, and operational
-                excellence, we are committed to delivering investment
-                opportunities that outperform market averages and create lasting
-                value for our stakeholders.
+                Through rigorous analysis, market expertise, and operational excellence, 
+                we aim to build a diversified portfolio of quality, income-producing properties across sectors, 
+                property types, and GCC countries — creating lasting value and outperforming market benchmarks for all stakeholders.
               </p>
             </div>
           </div>
@@ -104,29 +96,26 @@ const AboutUs = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
               <div className="p-6 border border-amber-200 rounded-lg">
                 <h4 className="text-xl font-semibold mb-3 text-amber-900">
-                  Integrity
+                  Integrity & Sharia Compliance
                 </h4>
                 <p className="text-gray-700">
-                  We operate with unwavering honesty and transparency in all our
-                  dealings with investors and partners.
+                We uphold the highest ethical standards by operating in full accordance with Sharia principles, ensuring transparency, trust, and accountability in every investment decision.
                 </p>
               </div>
               <div className="p-6 border border-amber-200 rounded-lg">
                 <h4 className="text-xl font-semibold mb-3 text-amber-900">
-                  Excellence
+                  Sustainable Value Creation
                 </h4>
                 <p className="text-gray-700">
-                  We pursue the highest standards in property selection,
-                  management, and investor relations.
+                  We focus on acquiring and managing high-quality, income-generating properties that deliver long-term, sustainable returns to our investors through stable and frequent distributions.
                 </p>
               </div>
               <div className="p-6 border border-amber-200 rounded-lg">
                 <h4 className="text-xl font-semibold mb-3 text-amber-900">
-                  Innovation
+                  Strategic Diversification
                 </h4>
                 <p className="text-gray-700">
-                  We constantly seek new approaches to optimize returns and
-                  improve the investment experience.
+                  We are committed to building a resilient and balanced real estate portfolio — diversified across sectors, property types, and GCC markets — to minimize risk and maximize growth potential.
                 </p>
               </div>
             </div>
