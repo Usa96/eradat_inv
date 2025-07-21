@@ -100,7 +100,7 @@ export const Footer = () => {
         </div>
         <div className="border-t border-amber-900 pt-6 text-center text-amber-100/60 text-sm">
           <p>
-            &copy; {new Date().getFullYear()} PrimeInvest. All rights reserved.
+            &copy; {new Date().getFullYear()} ERADAT. All rights reserved.
           </p>
           <div className="mt-2 space-x-4">
             <a href="#" className="hover:text-amber-100 transition-colors">

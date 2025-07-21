@@ -1,9 +1,10 @@
 import React from 'react';
-import { MapPinIcon, PhoneIcon, MailIcon, ClockIcon, FacebookIcon, TwitterIcon, InstagramIcon, LinkedinIcon } from 'lucide-react';
+import { SiX } from 'react-icons/si';
+import { MapPinIcon, PhoneIcon, MailIcon, ClockIcon, InstagramIcon, LinkedinIcon } from 'lucide-react';
 const Contact = () => {
   return <main>
       {/* Hero Section */}
-      <section className="bg-black text-white pt-32 pb-16">
+      <section className="bg-amber-900 text-white pt-40 pb-16">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">Contact Us</h1>
@@ -89,8 +90,8 @@ const Contact = () => {
                   Connect With Us
                 </h3>
                 <div className="flex space-x-4">
-                  <a href="https://x.com/Eradatkw" className="bg-amber-100 p-3 rounded-full text-amber-800 hover:bg-amber-200 transition-colors">
-                    <TwitterIcon className="h-5 w-5" />
+                  <a href="https://x.com/Eradatkw" className="bg-amber-100 p-3 rounded-full text-amber-800 hover:bg-amber-200 transition-colors" aria-label="X (Twitter)">
+                    <SiX className="h-5 w-5" />
                   </a>
                   <a href="https://www.instagram.com/eradatkw/#" className="bg-amber-100 p-3 rounded-full text-amber-800 hover:bg-amber-200 transition-colors">
                     <InstagramIcon className="h-5 w-5" />

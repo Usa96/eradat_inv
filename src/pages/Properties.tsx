@@ -177,7 +177,7 @@ const Properties = () => {
   return (
     <main>
       {/* Hero Section */}
-      <section className="relative bg-black text-white pt-32 pb-20">
+      <section className="relative bg-black text-white pt-40 pb-20">
         <div className="absolute inset-0 z-0">
           <img
             src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1773&q=80"
@@ -192,50 +192,15 @@ const Properties = () => {
             </h1>
             <p className="text-xl text-amber-100 mb-8">
               Browse our curated selection of high-performing real estate
-              investment opportunities.
+              investments.
             </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Filters Section */}
-      <section className="sticky top-16 z-20 bg-white py-4 shadow-md border-b border-gray-200">
-        <div className="w-full px-0">
-          <div className="flex flex-wrap items-center justify-between gap-4">
-            <div className="flex flex-wrap items-center gap-4">
-              <div className="flex items-center">
-                <FilterIcon className="h-5 w-5 text-amber-800 mr-2" />
-                <span className="text-gray-700 font-medium hidden md:inline">
-                  Filter:
-                </span>
-              </div>
-              <select
-                className="bg-white border border-gray-300 text-gray-700 py-2 px-3 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-500 text-sm"
-                value={filterType}
-                onChange={(e) => setFilterType(e.target.value)}
-              >
-                <option value="All">All Types</option>
-                <option value="Residential">Residential</option>
-                <option value="Commercial">Commercial</option>
-                <option value="Mixed-Use">Mixed-Use</option>
-              </select>
-            </div>
-            <div className="flex items-center gap-4">
-              <div className="text-sm text-gray-600 hidden md:block">
-                Showing{' '}
-                {processedProperties.length > 6
-                  ? 6
-                  : processedProperties.length}{' '}
-                of {propertiesData.length} properties
-              </div>
-            </div>
           </div>
         </div>
       </section>
 
       {/* Properties Content */}
       <section className="py-12 bg-gray-50">
-        <div className="w-full px-0">
+        <div className="w-full mx-auto px-4">
           {selectedProperty ? (
             <div className="mb-8">
               <button
@@ -310,75 +275,94 @@ const Properties = () => {
                         <span>{selectedProperty.location}</span>
                       </div>
                     </div>
-
                   </div>
-                  {/* Key Metrics */}
-                  <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-10 bg-gray-50 p-6 rounded-lg">
+                  {/* Two-column layout for overview and details */}
+                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-10">
+                    {/* Property Overview - Left Column */}
                     <div>
-                      <div className="flex items-center mb-2">
-                        <PercentIcon className="h-5 w-5 mr-2 text-amber-800" />
-                        <span className="text-gray-700 font-medium">
-                          Expected ROI
-                        </span>
-                      </div>
-                      <p className="text-2xl font-bold text-gray-900">
-                        {selectedProperty.roi}
+                      <h3 className="text-2xl font-semibold mb-4 text-gray-900">
+                        Property Overview
+                      </h3>
+                      <p className="text-gray-700 text-lg leading-relaxed">
+                        {selectedProperty.description}
                       </p>
                     </div>
-
-                    <div>
-                      <div className="flex items-center mb-2">
-                        <SquareIcon className="h-5 w-5 mr-2 text-amber-800" />
-                        <span className="text-gray-700 font-medium">
-                          Square Footage
-                        </span>
-                      </div>
-                      <p className="text-2xl font-bold text-gray-900">
-                        {selectedProperty.sqft} sq ft
-                      </p>
-                    </div>
-                    <div>
-                      <div className="flex items-center mb-2">
-                        <DollarSignIcon className="h-5 w-5 mr-2 text-amber-800" />
-                        <span className="text-gray-700 font-medium">
-                          Occupancy
-                        </span>
-                      </div>
-                      <p className="text-2xl font-bold text-gray-900">
-                        {selectedProperty.occupancy}
-                      </p>
-                    </div>
-                  </div>
-                  {/* Property Details */}
-                  <div className="mb-10">
-                    <h3 className="text-2xl font-semibold mb-4 text-gray-900">
-                      Property Overview
-                    </h3>
-                    <p className="text-gray-700 mb-8 text-lg leading-relaxed">
-                      {selectedProperty.description}
-                    </p>
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-y-6">
-                      <div>
-                        <span className="block text-sm text-gray-500 mb-1">
-                          Year Built
-                        </span>
+                    {/* Property Details - Right Column with Icons */}
+                    <div className="bg-gray-50 p-6 rounded-lg">
+                      <h3 className="text-xl font-semibold mb-5 text-gray-900">
+                        Property Details
+                      </h3>
+                      <div className="grid grid-cols-2 gap-6">
                         <div className="flex items-center">
-                          <CalendarIcon className="h-4 w-4 text-amber-800 mr-2" />
-                          <span className="font-medium text-gray-900">
-                            {selectedProperty.yearBuilt}
-                          </span>
+                          <div className="h-12 w-12 rounded-full bg-amber-100 flex items-center justify-center mr-4">
+                            <PercentIcon className="h-6 w-6 text-amber-800" />
+                          </div>
+                          <div>
+                            <span className="block text-sm text-gray-500">
+                              Type
+                            </span>
+                            <span className="font-bold text-xl text-gray-900">
+                              {selectedProperty.roi}
+                            </span>
+                          </div>
                         </div>
-                      </div>
-
-                      <div>
-                        <span className="block text-sm text-gray-500 mb-1">
-                          Property Type
-                        </span>
                         <div className="flex items-center">
-                          {getPropertyTypeIcon(selectedProperty.type)}
-                          <span className="font-medium text-gray-900 ml-2">
-                            {selectedProperty.type}
-                          </span>
+                          <div className="h-12 w-12 rounded-full bg-amber-100 flex items-center justify-center mr-4">
+                            <SquareIcon className="h-6 w-6 text-amber-800" />
+                          </div>
+                          <div>
+                            <span className="block text-sm text-gray-500">
+                              Square Footage
+                            </span>
+                            <span className="font-bold text-xl text-gray-900">
+                              {selectedProperty.sqft} sq ft
+                            </span>
+                          </div>
+                        </div>
+                        <div className="flex items-center">
+                          <div className="h-12 w-12 rounded-full bg-amber-100 flex items-center justify-center mr-4">
+                            <DollarSignIcon className="h-6 w-6 text-amber-800" />
+                          </div>
+                          <div>
+                            <span className="block text-sm text-gray-500">
+                              Area
+                            </span>
+                            <span className="font-bold text-xl text-gray-900">
+                              {selectedProperty.occupancy}
+                            </span>
+                          </div>
+                        </div>
+                        <div className="flex items-center">
+                          <div className="h-12 w-12 rounded-full bg-amber-100 flex items-center justify-center mr-4">
+                            <CalendarIcon className="h-6 w-6 text-amber-800" />
+                          </div>
+                          <div>
+                            <span className="block text-sm text-gray-500">
+                              Year Built
+                            </span>
+                            <span className="font-bold text-xl text-gray-900">
+                              {selectedProperty.yearBuilt}
+                            </span>
+                          </div>
+                        </div>
+                        <div className="flex items-center">
+                          <div className="h-12 w-12 rounded-full bg-amber-100 flex items-center justify-center mr-4">
+                            <MapIcon className="h-6 w-6 text-amber-800" />
+                          </div>
+                          Plot Area
+                        </div>
+                        <div className="flex items-center">
+                          <div className="h-12 w-12 rounded-full bg-amber-100 flex items-center justify-center mr-4">
+                            {getPropertyTypeIcon(selectedProperty.type)}
+                          </div>
+                          <div>
+                            <span className="block text-sm text-gray-500">
+                              Property Type
+                            </span>
+                            <span className="font-bold text-xl text-gray-900">
+                              {selectedProperty.type}
+                            </span>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -409,7 +393,7 @@ const Properties = () => {
               ) : (
                 <div className="space-y-12 w-full">
                   {/* All properties in full-width format */}
-                  {processedProperties.slice(0, 6).map((property, index) => (
+                  {processedProperties.map((property, index) => (
                     <div
                       key={property.id}
                       className="bg-white rounded-xl shadow-xl overflow-hidden hover:shadow-2xl transition-all cursor-pointer"
@@ -434,24 +418,7 @@ const Properties = () => {
                             
                           </div>
                         </div>
-                        <button
-                          onClick={(e) => toggleSaveProperty(property.id, e)}
-                          className={`absolute top-4 right-4 p-2 rounded-full ${savedProperties.includes(property.id) ? 'bg-amber-100 text-amber-800' : 'bg-white/80 text-gray-600 hover:text-amber-800'}`}
-                          aria-label={
-                            savedProperties.includes(property.id)
-                              ? 'Unsave property'
-                              : 'Save property'
-                          }
-                        >
-                          <HeartIcon
-                            className="h-5 w-5"
-                            fill={
-                              savedProperties.includes(property.id)
-                                ? 'currentColor'
-                                : 'none'
-                            }
-                          />
-                        </button>
+
                         <div className="absolute bottom-0 left-0 right-0 p-8 md:p-12 text-white">
                           <div className="flex items-center space-x-2 mb-4">
                             <div
@@ -475,28 +442,6 @@ const Properties = () => {
                           <p className="text-gray-200 mb-8 max-w-3xl text-lg">
                             {property.description}
                           </p>
-                          <div className="flex flex-wrap gap-8 mb-8">
-                            <div>
-                              <p className="text-amber-200 text-sm mb-1">
-                                Minimum Investment
-                              </p>
-                              
-                            </div>
-                            <div>
-                              <p className="text-amber-200 text-sm mb-1">
-                                Expected ROI
-                              </p>
-                              <p className="text-2xl font-bold text-amber-300">
-                                {property.roi}
-                              </p>
-                            </div>
-                            <div>
-                              <p className="text-amber-200 text-sm mb-1">
-                                Investment Term
-                              </p>
-
-                            </div>
-                          </div>
                           <button
                             onClick={(e) => {
                               e.stopPropagation()

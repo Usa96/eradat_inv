@@ -43,7 +43,7 @@ const AboutUs = () => {
   }];
   return <main>
       {/* Hero Section */}
-      <section className="relative bg-amber-900 text-white pt-32 pb-20">
+      <section className="relative bg-amber-900 text-white pt-40 pb-20">
         <div className="absolute inset-0 opacity-20 bg-pattern-diagonal" aria-hidden="true"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
@@ -51,7 +51,7 @@ const AboutUs = () => {
               About ERADAT
             </h1>
             <p className="text-xl text-amber-100">
-              ERADAT strives to become Kuwait's premier listed real estate investment company, operating in accordance with Sharia principles. Our focus is on acquiring high-quality, sustainable, and diversified income-generating properties.
+              ERADAT strives to become Kuwait's premier real estate investment company, operating in accordance with Sharia principles. Our focus is on acquiring high-quality, sustainable, and diversified income-generating properties.
             </p>
           </div>
         </div>
@@ -128,7 +128,7 @@ const AboutUs = () => {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4">Our Leadership</h2>
             <p className="text-gray-700 max-w-2xl mx-auto">
-              Meet the experienced team guiding PrimeInvest's vision and
+              Meet the experienced team guiding ERADAT's vision and
               strategy.
             </p>
           </div>

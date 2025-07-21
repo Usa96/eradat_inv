@@ -118,7 +118,7 @@ const Media = () => {
   };
   return <main>
       {/* Hero Section */}
-      <section className="bg-amber-900 text-white pt-32 pb-16">
+      <section className="bg-amber-900 text-white pt-40 pb-16">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
