@@ -39,9 +39,11 @@ export const Header = () => {
         {/* Center Logo */}
         <div className="flex items-center justify-center">
           <Link to="/">
-            <img src="/assets/logo.png" // Replace with your actual path
-          alt="ERADAT Logo" className={`h-28 transition-all ${hasScrolled ? '' : 'invert'}`} // Optional invert for light backgrounds
-          />
+            <img 
+              src={hasScrolled ? "/assets/logo.png" : "/assets/white_logo.png"}
+              alt="ERADAT Logo"
+              className="h-28 transition-all"
+            />
           </Link>
         </div>
 

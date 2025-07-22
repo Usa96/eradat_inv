@@ -171,17 +171,18 @@ const Media = () => {
   return (
     <main>
       {/* Hero Section */}
-      <section className="relative bg-amber-900 text-white pt-32 pb-16">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Latest Media
-            </h1>
-            <p className="text-xl text-amber-100 mb-8">
-              Stay updated with the latest news, insights, and announcements
-              from PrimeInvest.
-            </p>
-          </div>
+      <section
+        className="relative h-screen bg-cover bg-center"
+        style={{ backgroundImage: "url('/assets/media_title.jpg')" }} // replace with correct path
+      >
+        {/* Overlay for contrast */}
+        <div className="absolute inset-0 bg-black/30 z-0" />
+
+        {/* Title Text at Bottom Left */}
+        <div className="absolute bottom-10 left-10 z-10">
+          <h1 className="text-white text-4xl md:text-6xl font-light tracking-widest">
+            LATEST MEDIA 
+          </h1>
         </div>
       </section>
 

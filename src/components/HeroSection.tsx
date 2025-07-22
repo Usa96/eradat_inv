@@ -9,16 +9,17 @@ export const HeroSection = () => {
           Your browser does not support the video tag.
         </video>
       </div>
-      <div className="absolute inset-0 z-10 bg-black bg-opacity-60" aria-hidden="true"></div>
-      <div className="container mx-auto px-4 h-full flex items-end relative z-10 pb-20">
-        <div className="max-w-2xl">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 text-amber-100">
-            Innovative Solutions Traditional Values
-          </h1>
-          <p className="text-xl mb-8 text-amber-50">
-            Your Gateway to Real Estate
+        <div className="absolute inset-0 bg-black/60 z-0" aria-hidden="true"></div>
+        <div className="relative z-10 flex flex-col items-center justify-center text-center text-white h-full px-4">
+          <p className="text-sm tracking-widest uppercase mb-2">
+            International Real Estate Company
           </p>
+          <h1 className="text-5xl md:text-7xl font-light tracking-wider mb-4">
+            ERADAT
+          </h1>
+          <div className="space-y-1 text-sm md:text-base">
+            <p>YOUR GATEWAY TO REAL ESTATE</p>
+          </div>
         </div>
-      </div>
     </section>;
 };

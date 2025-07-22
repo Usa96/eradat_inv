@@ -178,24 +178,18 @@ const Properties = () => {
   return (
     <main>
       {/* Hero Section */}
-      <section className="relative bg-black text-white pt-40 pb-20">
-        <div className="absolute inset-0 z-0">
-          <img
-            src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1773&q=80"
-            alt="Real estate properties"
-            className="w-full h-full object-cover opacity-40"
-          />
-        </div>
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Investment Properties
-            </h1>
-            <p className="text-xl text-amber-100 mb-8">
-              Browse our curated selection of high-performing real estate
-              investments.
-            </p>
-          </div>
+      <section
+        className="relative h-screen bg-cover bg-center"
+        style={{ backgroundImage: "url('/assets/properties_hero.jpg')" }} // replace with correct path
+      >
+        {/* Overlay for contrast */}
+        <div className="absolute inset-0 bg-black/30 z-0" />
+
+        {/* Title Text at Bottom Left */}
+        <div className="absolute bottom-10 left-10 z-10">
+          <h1 className="text-white text-4xl md:text-6xl font-light tracking-widest">
+            INVESTMENT PROPERTIES 
+          </h1>
         </div>
       </section>
 

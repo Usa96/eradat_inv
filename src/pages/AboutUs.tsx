@@ -1,6 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { LinkedinIcon } from 'lucide-react';
+import {
+  LinkedinIcon,
+  ChevronRightIcon,
+  MapPinIcon,
+  UsersIcon,
+  BuildingIcon,
+  AwardIcon,
+  TargetIcon,
+  CompassIcon,
+  HeartIcon,
+  BrainIcon,
+  HandshakeIcon,
+} from 'lucide-react';
 interface LeaderProfile {
   id: number;
   name: string;
@@ -40,88 +52,294 @@ const AboutUs = () => {
     title: 'Board Member',
     image: '/assets/team/saad.png',
     bio: 'An experienced finance executive with a BBA and 15+ years in Kuwait’s financial sector. Board member of First Securities Brokerage and Global Investment House.',
-  }];
+  }]
+  const milestones = [
+    {
+      year: 2012,
+      title: 'Founded',
+      description:
+        'Lorem Ipsum Delator',
+    },
+    {
+      year: 2015,
+      title: 'First Fund',
+      description:
+        'Lorem Ipsum Delator',
+    },
+    {
+      year: 2018,
+      title: 'Expansion',
+      description:
+        'Lorem Ipsum Delator',
+    },
+    {
+      year: 2020,
+      title: 'Technology Platform',
+      description:
+        'Lorem Ipsum Delator',
+    },
+    {
+      year: 2023,
+      title: 'Today',
+      description:
+        'Lorem Ipsum Delator',
+    },
+  ];
   return <main>
       {/* Hero Section */}
-      <section className="relative bg-amber-900 text-white pt-40 pb-20">
-        <div className="absolute inset-0 opacity-20 bg-pattern-diagonal" aria-hidden="true"></div>
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              About ERADAT
-            </h1>
-            <p className="text-xl text-amber-100">
-              ERADAT strives to become Kuwait's premier real estate investment company, operating in accordance with Sharia principles. Our focus is on acquiring high-quality, sustainable, and diversified income-generating properties.
-            </p>
+      <section
+        className="relative h-screen bg-cover bg-center"
+        style={{ backgroundImage: "url('/assets/about_hero.jpg')" }} // replace with correct path
+      >
+        {/* Overlay for contrast */}
+        <div className="absolute inset-0 bg-black/30 z-0" />
+
+        {/* Title Text at Bottom Left */}
+        <div className="absolute bottom-10 left-10 z-10">
+          <h1 className="text-white text-4xl md:text-6xl font-light tracking-widest">
+            ABOUT US 
+          </h1>
+        </div>
+      </section>
+      <section className="relative pt-24 pb-16">
+        <div className="flex flex-col lg:flex-row">
+          {/* Left Column */}
+          <div className="w-full lg:w-1/2 px-4 lg:px-12 mb-12 lg:mb-0 z-10">
+            <div className="relative max-w-xl">
+              <div className="absolute -top-6 -left-6 w-24 h-24 bg-amber-100 rounded-full opacity-70"></div>
+              <h1 className="text-5xl font-bold mb-6 text-gray-900 relative z-10">
+                Our Story
+              </h1>
+              <p className="text-xl text-gray-700 mb-8">
+                Founded on the principles of integrity, innovation, and inclusivity,
+                <span className="font-medium"> ERADAT </span>
+                is transforming how people build wealth through real estate.
+              </p>
+              <div className="flex items-center space-x-6">
+                <div className="bg-amber-50 px-4 py-3 rounded-lg">
+                  <p className="text-3xl font-bold text-amber-800">$54M+</p>
+                  <p className="text-sm text-gray-600">Assets Managed</p>
+                </div>
+                <div className="bg-amber-50 px-4 py-3 rounded-lg">
+                  <p className="text-3xl font-bold text-amber-800">14</p>
+                  <p className="text-sm text-gray-600">Properties</p>
+                </div>
+                <div className="bg-amber-50 px-4 py-3 rounded-lg">
+                  <p className="text-3xl font-bold text-amber-800">90%</p>
+                  <p className="text-sm text-gray-600">Target Dividend Ratio</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Right Image Column - Full Width on Right */}
+          <div className="w-full lg:w-1/2 h-96 lg:h-[500px] relative">
+            <img
+              src="/assets/about_us_section.jpg"
+              alt="Eradat headquarters"
+              className="w-full h-full object-cover rounded-none shadow-none"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+            <div className="absolute bottom-0 left-0 p-6 text-white">
+              <div className="flex items-center">
+                <MapPinIcon className="h-5 w-5 text-amber-300 mr-2" />
+                <span className="text-amber-100">Headquarters • Kuwait</span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
+
+
+      <section className="py-20 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto text-center mb-16">
+            <h2 className="text-4xl font-bold mb-6 text-gray-900">
+              Our Approach
+            </h2>
+            <p className="text-xl text-gray-600">
+              We combine time-tested investment principles with innovative
+              technology to create exceptional value for our investors.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div className="relative">
+              <div className="aspect-square rounded-full overflow-hidden border-8 border-white shadow-xl">
+                <img
+                  src="/assets/our_approach.jpg"
+                  alt="Team collaboration"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="absolute -bottom-6 -right-6 p-4 bg-amber-800 text-white rounded-lg shadow-lg">
+                <UsersIcon className="h-10 w-10" />
+              </div>
+            </div>
+            <div>
+              <div className="space-y-8">
+                <div className="flex">
+                  <div className="flex-shrink-0 mr-4">
+                    <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center">
+                      <TargetIcon className="h-6 w-6 text-amber-800" />
+                    </div>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold mb-2 text-gray-900">
+                      Our Vision
+                    </h3>
+                    <p className="text-gray-600">
+                      To democratize access to institutional-quality real estate
+                      investments, creating pathways to financial independence
+                      for investors of all backgrounds.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex">
+                  <div className="flex-shrink-0 mr-4">
+                    <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center">
+                      <CompassIcon className="h-6 w-6 text-amber-800" />
+                    </div>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold mb-2 text-gray-900">
+                      Our Mission
+                    </h3>
+                    <p className="text-gray-600">
+                      To identify, acquire, and manage high-performing real
+                      estate assets that generate consistent returns while
+                      minimizing risk for our investors.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex">
+                  <div className="flex-shrink-0 mr-4">
+                    <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center">
+                      <BuildingIcon className="h-6 w-6 text-amber-800" />
+                    </div>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold mb-2 text-gray-900">
+                      Our Strategy
+                    </h3>
+                    <p className="text-gray-600">
+                      We focus on value-add opportunities in high-growth
+                      markets, using proprietary analytics to identify
+                      properties with strong appreciation potential.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Vision & Mission Section */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-            <div className="bg-amber-50 p-8 rounded-lg shadow-md">
-              <h2 className="text-3xl font-bold mb-6 text-amber-900">
-                Our Vision
-              </h2>
-              <p className="text-gray-800 mb-4">
-                Our vision is to become a leading real estate investment company that 
-                serves as a pass-through vehicle for premium, 
-                income-producing assets — offering a diversified investor base access to 
-                institutional-quality opportunities with sustainable 
-                and frequent cash distributions.
-              </p>
-              <p className="text-gray-800">
-                We are committed to democratizing real estate investing by making long-term wealth creation through high-performing properties accessible to discerning investors seeking financial independence, not just the ultra-wealthy.
-              </p>
+          <section className="py-20">
+            <div className="container mx-auto px-4">
+              <div className="text-center mb-16">
+                <h2 className="text-4xl font-bold mb-6 text-gray-900">
+                  Our Core Values
+                </h2>
+                <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                  These principles guide every decision we make and every
+                  relationship we build.
+                </p>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow border-t-4 border-amber-500">
+                  <div className="w-16 h-16 bg-amber-50 rounded-full flex items-center justify-center mb-6">
+                    <HeartIcon className="h-8 w-8 text-amber-800" />
+                  </div>
+                  <h3 className="text-2xl font-semibold mb-4 text-gray-900">
+                    Integrity
+                  </h3>
+                  <p className="text-gray-600">
+                    We operate with unwavering honesty and transparency in all our
+                    dealings with investors and partners. Trust is the foundation of
+                    our business.
+                  </p>
+                </div>
+                <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow border-t-4 border-amber-500">
+                  <div className="w-16 h-16 bg-amber-50 rounded-full flex items-center justify-center mb-6">
+                    <AwardIcon className="h-8 w-8 text-amber-800" />
+                  </div>
+                  <h3 className="text-2xl font-semibold mb-4 text-gray-900">
+                    Excellence
+                  </h3>
+                  <p className="text-gray-600">
+                    We pursue the highest standards in property selection,
+                    management, and investor relations. Mediocrity has no place in
+                    our organization.
+                  </p>
+                </div>
+                <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow border-t-4 border-amber-500">
+                  <div className="w-16 h-16 bg-amber-50 rounded-full flex items-center justify-center mb-6">
+                    <BrainIcon className="h-8 w-8 text-amber-800" />
+                  </div>
+                  <h3 className="text-2xl font-semibold mb-4 text-gray-900">
+                    Innovation
+                  </h3>
+                  <p className="text-gray-600">
+                    We constantly seek new approaches to optimize returns and
+                    improve the investment experience. We embrace change and drive
+                    industry evolution.
+                  </p>
+                </div>
+              </div>
             </div>
-            <div className="bg-gray-900 p-8 rounded-lg shadow-md text-white">
-              <h2 className="text-3xl font-bold mb-6 text-amber-200">
-                Our Mission
-              </h2>
-              <p className="text-gray-100 mb-4">
-                To identify, acquire, and manage high-performing real estate
-                assets that generate consistent returns while minimizing risk
-                for our investors.
-              </p>
-              <p className="text-gray-100">
-                Through rigorous analysis, market expertise, and operational excellence, 
-                we aim to build a diversified portfolio of quality, income-producing properties across sectors, 
-                property types, and GCC countries — creating lasting value and outperforming market benchmarks for all stakeholders.
-              </p>
-            </div>
+          </section>
+        </div>
+      </section>
+
+      {/* Timeline Section */}
+      <section className="py-20 bg-gray-900 text-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold mb-6 text-amber-100">
+              Our Journey
+            </h2>
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+              From humble beginnings to industry leadership, our path has been
+              defined by vision, perseverance, and a commitment to excellence.
+            </p>
           </div>
-          <div className="mt-16 text-center">
-            <h3 className="text-2xl font-semibold mb-4">Our Core Values</h3>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
-              <div className="p-6 border border-amber-200 rounded-lg">
-                <h4 className="text-xl font-semibold mb-3 text-amber-900">
-                  Integrity & Sharia Compliance
-                </h4>
-                <p className="text-gray-700">
-                We uphold the highest ethical standards by operating in full accordance with Sharia principles, ensuring transparency, trust, and accountability in every investment decision.
-                </p>
+          <div className="relative max-w-4xl mx-auto">
+            {/* Timeline line */}
+            <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-amber-700"></div>
+            {/* Timeline items */}
+            {milestones.map((milestone, index) => (
+              <div
+                key={index}
+                className={`relative z-10 mb-12 flex ${index % 2 === 0 ? 'flex-row-reverse' : ''}`}
+              >
+                <div className="w-1/2"></div>
+                <div className="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/4">
+                  <div className="w-10 h-10 bg-amber-500 rounded-full border-4 border-gray-900 flex items-center justify-center">
+                    <div className="w-3 h-3 bg-amber-200 rounded-full"></div>
+                  </div>
+                </div>
+                <div
+                  className={`w-1/2 ${index % 2 === 0 ? 'pr-12 text-right' : 'pl-12'}`}
+                >
+                  <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
+                    <span className="text-amber-400 font-bold text-xl">
+                      {milestone.year}
+                    </span>
+                    <h3 className="text-xl font-semibold mb-2 text-white">
+                      {milestone.title}
+                    </h3>
+                    <p className="text-gray-300">{milestone.description}</p>
+                  </div>
+                </div>
               </div>
-              <div className="p-6 border border-amber-200 rounded-lg">
-                <h4 className="text-xl font-semibold mb-3 text-amber-900">
-                  Sustainable Value Creation
-                </h4>
-                <p className="text-gray-700">
-                  We focus on acquiring and managing high-quality, income-generating properties that deliver long-term, sustainable returns to our investors through stable and frequent distributions.
-                </p>
-              </div>
-              <div className="p-6 border border-amber-200 rounded-lg">
-                <h4 className="text-xl font-semibold mb-3 text-amber-900">
-                  Strategic Diversification
-                </h4>
-                <p className="text-gray-700">
-                  We are committed to building a resilient and balanced real estate portfolio — diversified across sectors, property types, and GCC markets — to minimize risk and maximize growth potential.
-                </p>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
+
       {/* Leadership Section */}
       <section className="py-16 bg-amber-50">
         <div className="container mx-auto px-4">

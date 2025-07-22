@@ -4,11 +4,19 @@ import { MapPinIcon, PhoneIcon, MailIcon, ClockIcon, InstagramIcon, LinkedinIcon
 const Contact = () => {
   return <main>
       {/* Hero Section */}
-      <section className="bg-amber-900 text-white pt-40 pb-16">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">Contact Us</h1>
-          </div>
+      {/* Hero Section */}
+      <section
+        className="relative h-screen bg-cover bg-center"
+        style={{ backgroundImage: "url('/assets/contact_us_title.jpg')" }} // replace with correct path
+      >
+        {/* Overlay for contrast */}
+        <div className="absolute inset-0 bg-black/30 z-0" />
+
+        {/* Title Text at Bottom Left */}
+        <div className="absolute bottom-10 left-10 z-10">
+          <h1 className="text-white text-4xl md:text-6xl font-light tracking-widest">
+            CONTACT INFO 
+          </h1>
         </div>
       </section>
       {/* Map and Contact Info */}

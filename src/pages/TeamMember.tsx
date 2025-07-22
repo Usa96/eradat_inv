@@ -1,6 +1,7 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { ArrowLeftIcon } from 'lucide-react';
+
 interface LeaderProfile {
   id: number;
   name: string;
@@ -89,7 +90,7 @@ const TeamMember = () => {
   if (!member) {
     return <div className="container mx-auto px-4 py-16 text-center">
         <h2 className="text-2xl font-bold mb-4">Team member not found</h2>
-        <Link to="/about" className="text-amber-800 hover:text-amber-900 font-medium inline-flex items-center">
+        <Link to="/AboutUs" className="text-amber-800 hover:text-amber-900 font-medium inline-flex items-center">
           <ArrowLeftIcon className="h-4 w-4 mr-2" />
           Return to About Us
         </Link>
@@ -100,7 +101,7 @@ const TeamMember = () => {
       <section className="bg-amber-900 text-white pt-32 pb-16">
         <div className="container mx-auto px-4">
           <div className="flex items-center mb-8">
-            <Link to="/about" className="text-amber-100 hover:text-white inline-flex items-center">
+            <Link to="/AboutUs" className="text-amber-100 hover:text-white inline-flex items-center">
               <ArrowLeftIcon className="h-5 w-5 mr-2" />
               Back to Team
             </Link>
