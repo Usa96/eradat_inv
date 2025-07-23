@@ -98,7 +98,7 @@ const TeamMember = () => {
   }
   return <main>
       {/* Hero Section */}
-      <section className="bg-amber-900 text-white pt-32 pb-16">
+      <section className="bg-amber-900 text-white pt-48 pb-16">
         <div className="container mx-auto px-4">
           <div className="flex items-center mb-8">
             <Link to="/AboutUs" className="text-amber-100 hover:text-white inline-flex items-center">

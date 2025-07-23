@@ -111,13 +111,12 @@ const AboutUs = () => {
                 Our Story
               </h1>
               <p className="text-xl text-gray-700 mb-8">
-                Founded on the principles of integrity, innovation, and inclusivity,
-                <span className="font-medium"> ERADAT </span>
-                is transforming how people build wealth through real estate.
+                ERADAT strives to become Kuwait's premier listed real estate investment company, operating in accordance with Sharia principles.
+                Our focus is on acquiring high-quality, sustainable, and diversified income-generating properties.
               </p>
               <div className="flex items-center space-x-6">
                 <div className="bg-amber-50 px-4 py-3 rounded-lg">
-                  <p className="text-3xl font-bold text-amber-800">$54M+</p>
+                  <p className="text-3xl font-bold text-amber-800">KD 54M+</p>
                   <p className="text-sm text-gray-600">Assets Managed</p>
                 </div>
                 <div className="bg-amber-50 px-4 py-3 rounded-lg">
@@ -158,8 +157,7 @@ const AboutUs = () => {
               Our Approach
             </h2>
             <p className="text-xl text-gray-600">
-              We combine time-tested investment principles with innovative
-              technology to create exceptional value for our investors.
+              We use time-tested investment principles  to create exceptional value for our investors.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -188,9 +186,7 @@ const AboutUs = () => {
                       Our Vision
                     </h3>
                     <p className="text-gray-600">
-                      To democratize access to institutional-quality real estate
-                      investments, creating pathways to financial independence
-                      for investors of all backgrounds.
+                      To create a real estate leading company that represents a pass-through vehicle of quality income-producing assets for a diversified investor base with exposure to frequent (quarterly/monthly) and sustainable cash distributions.
                     </p>
                   </div>
                 </div>
@@ -205,9 +201,7 @@ const AboutUs = () => {
                       Our Mission
                     </h3>
                     <p className="text-gray-600">
-                      To identify, acquire, and manage high-performing real
-                      estate assets that generate consistent returns while
-                      minimizing risk for our investors.
+                      To build a diversified portfolio of quality income-producing properties. To expand its reach and presence of its underlying portfolio across sectors, property type and countries within the GCC.
                     </p>
                   </div>
                 </div>
@@ -222,9 +216,7 @@ const AboutUs = () => {
                       Our Strategy
                     </h3>
                     <p className="text-gray-600">
-                      We focus on value-add opportunities in high-growth
-                      markets, using proprietary analytics to identify
-                      properties with strong appreciation potential.
+                      We focus on value-add opportunities in high-growth markets by identifying properties with strong appreciation potential.
                     </p>
                   </div>
                 </div>

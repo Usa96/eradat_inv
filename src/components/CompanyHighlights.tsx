@@ -28,7 +28,7 @@ export const CompanyHighlights = () => {
         <div className="bg-amber-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
           <BuildingIcon className="h-8 w-8 text-amber-800" />
         </div>
-        <p className="text-4xl font-bold mb-2">KWD 54M+</p>
+        <p className="text-4xl font-bold mb-2">KD 54M+</p>
         <p>Assets Under Management</p>
       </div>
 

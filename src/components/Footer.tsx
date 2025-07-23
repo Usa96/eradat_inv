@@ -8,7 +8,7 @@ export const Footer = () => {
   <div className="text-left max-w-7xl mx-auto mb-12">
     <h2 className="text-2xl font-light tracking-wide mb-4">ERADAT</h2>
     <p className="leading-relaxed text-gray-700">
-      Building wealth through strategic real estate investments. ERADAT is a premier real estate investment and development company delivering exceptional properties and strong returns.
+      Building wealth through strategic real estate investments. ERADAT is a premier real estate investment company delivering strong returns.
     </p>
   </div>
 
