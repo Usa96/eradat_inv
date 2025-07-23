@@ -103,10 +103,10 @@ export const PropertiesCarousel = () => {
                 key={property.id}
                 className={`transition-opacity duration-500 ${index === currentIndex ? 'opacity-100' : 'opacity-0 hidden'}`}
               >
-                <p className="text-lg text-gray-600 mb-4">
+                <p className="text-2xl text-gray-600 mb-4">
                   {property.title}, {property.location}
                 </p>
-                <p className="text-gray-700 mb-8 max-w-xl leading-relaxed">
+                <p className="text-gray-700 mb-8 max-w-xl leading-relaxed text-lg">
                   {property.description}
                 </p>
                 <Link

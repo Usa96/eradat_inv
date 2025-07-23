@@ -5,7 +5,7 @@ export const AboutSection = () => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img src="/assets/home_about.jpg" alt="Modern luxury real estate property" className="w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-black bg-opacity-40"></div>
+        <div className="absolute inset-0 bg-black bg-opacity-70"></div>
       </div>
       {/* Content Overlay */}
       <div className="absolute inset-0 flex items-center justify-center z-10">
@@ -13,7 +13,7 @@ export const AboutSection = () => {
           <div className="max-w-4xl mx-auto text-white">
             <img src="/assets/white_logo.png" // Replace with your actual filename/path
               alt="ERADAT Logo" className="h-40 mx-auto mb-8"/>
-            <p className="text-lg md:text-xl leading-relaxed mb-8">
+            <p className="text-xl md:text-xl leading-relaxed mb-8">
               Your Gateway to Real Estate. ERADAT is a premier real estate
               investment company with a proven track record of
               delivering strong returns for our

@@ -31,6 +31,10 @@ interface Property {
   sqft?: string
   yearBuilt?: string
   additionalImages?: string[]
+  coordinates?: {
+    lat: number,
+    lng: number,
+  }
 }
 const Properties = () => {
   const location = useLocation()
@@ -343,6 +347,34 @@ const Properties = () => {
                       </div>
                     </div>
                   </div>
+                    <div className="mt-10 mb-6">
+                      <h3 className="text-2xl font-semibold mb-4 text-gray-900">
+                        Property Location
+                      </h3>
+                      <div className="mt-10 mb-6">
+                    <h3 className="text-2xl font-semibold mb-4 text-gray-900">
+                      Property Location
+                    </h3>
+                    <div className="rounded-lg overflow-hidden border border-gray-200 shadow-md h-[400px]">
+                      <iframe
+                        src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=${selectedProperty.coordinates?.lat},${selectedProperty.coordinates?.lng}&zoom=14`}
+                        width="100%"
+                        height="100%"
+                        style={{
+                          border: 0,
+                        }}
+                        allowFullScreen
+                        loading="lazy"
+                        referrerPolicy="no-referrer-when-downgrade"
+                        title={`Map showing location of ${selectedProperty.title}`}
+                      ></iframe>
+                    </div>
+                    <p className="mt-3 text-gray-600 flex items-center">
+                      <MapPinIcon className="h-5 w-5 mr-2 text-amber-800" />
+                      {selectedProperty.location} -{' '}
+                    </p>
+                  </div>
+                    </div>
                 </div>
               </div>
             </div>

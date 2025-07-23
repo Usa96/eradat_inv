@@ -3,10 +3,7 @@ import { BarChartIcon, BuildingIcon, LayoutIcon, PercentIcon } from 'lucide-reac
 export const CompanyHighlights = () => {
   return <section
   className="py-24 bg-fixed bg-cover bg-center text-white"
-  style={{
-    backgroundImage: "url('/assets/company_highlights.webp')" // Replace with actual image path
-  }}
->
+  style={{ backgroundImage: "url('/assets/company_highlights.webp')"}}>
   {/* Optional overlay for better text contrast */}
   <div className="bg-black/50 w-full h-full absolute top-0 left-0 z-0"></div>
 
@@ -22,7 +19,7 @@ export const CompanyHighlights = () => {
       </p>
     </div>
 
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-xl">
       {/* Block 1 */}
       <div className="bg-white/90 p-8 rounded-lg shadow-md text-center text-gray-900">
         <div className="bg-amber-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">

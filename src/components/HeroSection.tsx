@@ -11,7 +11,7 @@ export const HeroSection = () => {
       </div>
         <div className="absolute inset-0 bg-black/60 z-0" aria-hidden="true"></div>
         <div className="relative z-10 flex flex-col items-center justify-center text-center text-white h-full px-4">
-          <p className="text-sm tracking-widest uppercase mb-2">
+          <p className="text-md tracking-widest uppercase mb-2">
             International Real Estate Company
           </p>
           <h1 className="text-5xl md:text-7xl font-light tracking-wider mb-4">
