@@ -101,54 +101,67 @@ const AboutUs = () => {
           </h1>
         </div>
       </section>
-      <section className="relative pt-24 pb-16">
-        <div className="flex flex-col lg:flex-row">
-          {/* Left Column */}
-          <div className="w-full lg:w-1/2 px-4 lg:px-12 mb-12 lg:mb-0 z-10">
-            <div className="relative max-w-xl">
-              <div className="absolute -top-6 -left-6 w-24 h-24 bg-amber-100 rounded-full opacity-70"></div>
-              <h1 className="text-5xl font-bold mb-6 text-gray-900 relative z-10">
-                Our Story
-              </h1>
-              <p className="text-xl text-gray-700 mb-8">
-                ERADAT strives to become Kuwait's premier listed real estate investment company, operating in accordance with Sharia principles.
-                Our focus is on acquiring high-quality, sustainable, and diversified income-generating properties.
-              </p>
-              <div className="flex items-center space-x-6">
-                <div className="bg-amber-50 px-4 py-3 rounded-lg">
-                  <p className="text-3xl font-bold text-amber-800">KD 54M+</p>
-                  <p className="text-sm text-gray-600">Assets Managed</p>
-                </div>
-                <div className="bg-amber-50 px-4 py-3 rounded-lg">
-                  <p className="text-3xl font-bold text-amber-800">14</p>
-                  <p className="text-sm text-gray-600">Properties</p>
-                </div>
-                <div className="bg-amber-50 px-4 py-3 rounded-lg">
-                  <p className="text-3xl font-bold text-amber-800">90%</p>
-                  <p className="text-sm text-gray-600">Target Dividend Ratio</p>
-                </div>
-              </div>
-            </div>
+      <section className="relative w-full">
+        <div className="absolute inset-0 z-0">
+          <img
+            src="/assets/about_us_section.jpg"
+            alt="ERADAT headquarters"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-black bg-opacity-70"></div>
+        </div>
+
+        <div className="relative z-10 container mx-auto px-4 py-24">
+          {/* Section Title */}
+          <div className="text-center text-white mb-12">
+            <h2 className="text-3xl md:text-5xl font-semibold tracking-wide">
+              Key Performance Highlights
+            </h2>
           </div>
 
-          {/* Right Image Column - Full Width on Right */}
-          <div className="w-full lg:w-1/2 h-96 lg:h-[500px] relative">
-            <img
-              src="/assets/about_us_section.jpg"
-              alt="Eradat headquarters"
-              className="w-full h-full object-cover rounded-none shadow-none"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-            <div className="absolute bottom-0 left-0 p-6 text-white">
-              <div className="flex items-center">
-                <MapPinIcon className="h-5 w-5 text-amber-300 mr-2" />
-                <span className="text-amber-100">Headquarters • Kuwait</span>
-              </div>
+          {/* Grid Counters */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-white">
+            {/* Row 1 */}
+            <div className="border-r border-white/20 px-6 py-10">
+              <h3 className="text-5xl md:text-6xl font-light mb-4">2006</h3>
+              <p className="text-xl tracking-wider uppercase text-gray-300">
+                FOUNDED
+              </p>
+            </div>
+            <div className="border-r border-white/20 px-6 py-10">
+              <h3 className="text-5xl md:text-6xl font-light mb-4">Kuwait</h3>
+              <p className="text-xl tracking-wider uppercase text-gray-300">
+                HEADQUARTERED IN
+              </p>
+            </div>
+            <div className="px-6 py-10">
+              <h3 className="text-5xl md:text-6xl font-light mb-4">KD 13.2 M</h3>
+              <p className="text-xl tracking-wider uppercase text-gray-300">
+                PAID UP CAPITAL
+              </p>
+            </div>
+            {/* Row 2 */}
+            <div className="border-r border-white/20 px-6 py-10">
+              <h3 className="text-5xl md:text-6xl font-light mb-4">KD 54 M</h3>
+              <p className="text-xl tracking-wider uppercase text-gray-300">
+                TOTAL ASSETS UNDER MANAGEMENT
+              </p>
+            </div>
+            <div className="border-r border-white/20 px-6 py-10">
+              <h3 className="text-5xl md:text-6xl font-light mb-4">90%</h3>
+              <p className="text-xl tracking-wider uppercase text-gray-300">
+                TARGET DIVIDEND RATIO
+              </p>
+            </div>
+            <div className="px-6 py-10">
+              <h3 className="text-5xl md:text-6xl font-light mb-4">20</h3>
+              <p className="text-xl tracking-wider uppercase text-gray-300">
+                YEARS OF EXPERIENCE
+              </p>
             </div>
           </div>
         </div>
       </section>
-
 
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
@@ -185,7 +198,7 @@ const AboutUs = () => {
                     <h3 className="text-xl font-semibold mb-2 text-gray-900">
                       Our Vision
                     </h3>
-                    <p className="text-gray-600">
+                    <p className="text-gray-600 text-xl">
                       To create a real estate leading company that represents a pass-through vehicle of quality income-producing assets for a diversified investor base with exposure to frequent (quarterly/monthly) and sustainable cash distributions.
                     </p>
                   </div>
@@ -200,7 +213,7 @@ const AboutUs = () => {
                     <h3 className="text-xl font-semibold mb-2 text-gray-900">
                       Our Mission
                     </h3>
-                    <p className="text-gray-600">
+                    <p className="text-gray-600 text-xl">
                       To build a diversified portfolio of quality income-producing properties. To expand its reach and presence of its underlying portfolio across sectors, property type and countries within the GCC.
                     </p>
                   </div>
@@ -215,7 +228,7 @@ const AboutUs = () => {
                     <h3 className="text-xl font-semibold mb-2 text-gray-900">
                       Our Strategy
                     </h3>
-                    <p className="text-gray-600">
+                    <p className="text-gray-600 text-xl">
                       We focus on value-add opportunities in high-growth markets by identifying properties with strong appreciation potential.
                     </p>
                   </div>
@@ -246,12 +259,10 @@ const AboutUs = () => {
                     <HeartIcon className="h-8 w-8 text-amber-800" />
                   </div>
                   <h3 className="text-2xl font-semibold mb-4 text-gray-900">
-                    Integrity
+                    Sharia-Compliant Integrity
                   </h3>
-                  <p className="text-gray-600">
-                    We operate with unwavering honesty and transparency in all our
-                    dealings with investors and partners. Trust is the foundation of
-                    our business.
+                  <p className="text-gray-600 text-xl">
+                    We adhere to Sharia principles in all our dealings—focusing on ethical, transparent, and faith-aligned transactions to preserve investor and partner trust.
                   </p>
                 </div>
                 <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow border-t-4 border-amber-500">
@@ -259,12 +270,10 @@ const AboutUs = () => {
                     <AwardIcon className="h-8 w-8 text-amber-800" />
                   </div>
                   <h3 className="text-2xl font-semibold mb-4 text-gray-900">
-                    Excellence
+                    Sustainable Growth
                   </h3>
-                  <p className="text-gray-600">
-                    We pursue the highest standards in property selection,
-                    management, and investor relations. Mediocrity has no place in
-                    our organization.
+                  <p className="text-gray-600 text-xl">
+                    We build a diversified portfolio of quality, income-generating real estate across the GCC—anchored in long-term stability and sustainable returns.
                   </p>
                 </div>
                 <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow border-t-4 border-amber-500">
@@ -272,12 +281,10 @@ const AboutUs = () => {
                     <BrainIcon className="h-8 w-8 text-amber-800" />
                   </div>
                   <h3 className="text-2xl font-semibold mb-4 text-gray-900">
-                    Innovation
+                    Investor-Centric Performance
                   </h3>
-                  <p className="text-gray-600">
-                    We constantly seek new approaches to optimize returns and
-                    improve the investment experience. We embrace change and drive
-                    industry evolution.
+                  <p className="text-gray-600 text-xl">
+                    Our mission is to be a vehicle for consistent, periodic distributions—ensuring regular, reliable income to our stakeholder base.
                   </p>
                 </div>
               </div>
@@ -352,7 +359,7 @@ const AboutUs = () => {
                     {leader.name}
                   </h3>
                   <p className="text-amber-800 mb-4">{leader.title}</p>
-                  <p className="text-gray-700 mb-4 text-sm">{leader.bio}</p>
+                  <p className="text-gray-700 mb-4 text-xl">{leader.bio}</p>
                   <div className="flex justify-between items-center">
                     {leader.linkedin && <a href={leader.linkedin} className="inline-flex items-center text-amber-900 hover:text-amber-700 font-medium" aria-label={`${leader.name}'s LinkedIn profile`}>
                         <LinkedinIcon size={20} />

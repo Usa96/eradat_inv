@@ -25,10 +25,10 @@ export const Header = () => {
       <div className="container mx-auto px-4 flex items-center justify-between">
         {/* Left Navigation */}
         <nav className="hidden md:flex space-x-8">
-          <Link to="/properties" className={`font-medium transition-colors ${hasScrolled ? isActive('/properties') ? 'text-amber-800' : 'text-gray-800 hover:text-amber-800' : isActive('/properties') ? 'text-amber-300' : 'text-white hover:text-amber-100'}`}>
+          <Link to="/properties" className={`font-medium text-xl transition-colors ${hasScrolled ? isActive('/properties') ? 'text-amber-800' : 'text-gray-800 hover:text-amber-800' : isActive('/properties') ? 'text-amber-300' : 'text-white hover:text-amber-100'}`}>
             Properties
           </Link>
-          <Link to="/about" className={`font-medium transition-colors ${hasScrolled ? isActive('/about') ? 'text-amber-800' : 'text-gray-800 hover:text-amber-800' : isActive('/about') ? 'text-amber-300' : 'text-white hover:text-amber-100'}`}>
+          <Link to="/about" className={`font-medium text-xl transition-colors ${hasScrolled ? isActive('/about') ? 'text-amber-800' : 'text-gray-800 hover:text-amber-800' : isActive('/about') ? 'text-amber-300' : 'text-white hover:text-amber-100'}`}>
             About
           </Link>
         </nav>
@@ -46,13 +46,12 @@ export const Header = () => {
             />
           </Link>
         </div>
-
         {/* Right Navigation */}
         <div className="hidden md:flex items-center space-x-8">
-          <Link to="/media" className={`font-medium transition-colors ${hasScrolled ? isActive('/media') ? 'text-amber-800' : 'text-gray-800 hover:text-amber-800' : isActive('/media') ? 'text-amber-300' : 'text-white hover:text-amber-100'}`}>
+          <Link to="/media" className={`font-medium text-xl transition-colors ${hasScrolled ? isActive('/media') ? 'text-amber-800' : 'text-gray-800 hover:text-amber-800' : isActive('/media') ? 'text-amber-300' : 'text-white hover:text-amber-100'}`}>
             Media
           </Link>
-          <Link to="/contact" className={`font-medium transition-colors ${hasScrolled ? isActive('/contact') ? 'text-amber-800' : 'text-gray-800 hover:text-amber-800' : isActive('/contact') ? 'text-amber-300' : 'text-white hover:text-amber-100'}`}>
+          <Link to="/contact" className={`font-medium text-xl transition-colors ${hasScrolled ? isActive('/contact') ? 'text-amber-800' : 'text-gray-800 hover:text-amber-800' : isActive('/contact') ? 'text-amber-300' : 'text-white hover:text-amber-100'}`}>
             Contact
           </Link>
         </div>
