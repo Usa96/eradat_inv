@@ -26,26 +26,29 @@ const TeamMember = () => {
     title: 'Chairman',
     image: '/assets/team/sulaiman.png',
     bio: 'Dr. Sulaiman brings a distinguished career in finance, investment, and academia, with leadership roles in both the public and private sectors. He has served as Vice Chairman of Aqar Real Estate Investment Company and held board positions in several prominent institutions.',
-    fullBio: `Dr. Sulaiman Al Abdul Jader is an accomplished leader in finance, investment, and academia, with a proven track record of impactful contributions across both public and private institutions. He currently serves as Vice Chairman of Aqar Real Estate Investment Company and is a board member of Al Mal Investment Company, where he has played a key role in guiding strategic investment decisions.\n\nDr. Sulaiman has also provided advisory expertise to prestigious national institutions, including the Kuwait Investment Authority and the Public Authority of Sports, reflecting his deep understanding of macroeconomic trends and public investment policy. In academia, his research focuses on alternative investments and financial economics, and he has made significant contributions to thought leadership in the region.\n\nWith a rare blend of academic insight and executive leadership, Dr. Sulaiman continues to shape the investment landscape in Kuwait and the broader GCC.`,
+    fullBio: `Dr. Sulaiman Tareq Al AbdulJader is an accomplished professional with a diverse background in finance, investment, and academia. He has held significant positions in renowned companies, including serving as Vice Chairman of Aqar Real Estate Investment Company and a board member of Al Mal Investment Company. Dr. Sulaiman's expertise extends to advisory roles for prestigious institutions such as the Kuwait Investment Authority and the Public Authority of Sports.\n\n With notable academic contributions and research focus on alternative investments and financial economics, he continues to make a lasting impact in the industry and academic community.`,
     expertise: ['Alternative Investments', 'Financial Economics', 'Strategic Investment Advisory', 'Governance & Board Leadership', 'Public Sector Policy'],
     education: ['PhD in Finance or Financial Economics (institution TBD)', 'Advanced courses or certifications in Investment Strategy (if applicable)', 'Bachelor’s degree (institution TBD)'],
-    achievements: ['Vice Chairman, Aqar Real Estate Investment Company', 'Board Member, Al Mal Investment Company', 'Advisor to Kuwait Investment Authority and Public Authority of Sports','Published researcher in the field of alternative investments','Recognized for contributions to finance and academia in Kuwait'] }, {
+    achievements: ['Vice Chairman, Aqar Real Estate Investment Company', 'Board Member, Al Mal Investment Company', 'Advisor to Kuwait Investment Authority and Public Authority of Sports','Published researcher in the field of alternative investments','Recognized for contributions to finance and academia in Kuwait'] 
+    }, 
+    {
     id: 2,
     name: 'Waleed Hamad Al Sumait',
     title: 'Vice Chairman',
     image: '/assets/team/waleed.png',
-    bio: 'Mr. Al Sumait brings over 20 years of investment experience and currently serves as Senior Vice President at Wafra, where he has played a key role since joining the firm in 2000.',
-    fullBio: `With over two decades of experience in the investment field, Mr. Al Sumait has built a strong reputation for strategic insight and financial expertise. Since beginning his career at Wafra in 2000, he has risen through the ranks to become Senior Vice President, contributing significantly to the firm’s growth and investment success.\n\nMr. Al Sumait holds a Bachelor of Business Administration degree from a prestigious U.S. institution and has earned multiple professional certifications relevant to the investment sector. His active participation in top-tier industry conferences reflects a deep commitment to staying ahead of global trends and continuously enhancing his professional capabilities.\n\nHis leadership and broad experience have positioned him as a key figure in Wafra’s long-term strategy and portfolio development.`,
+    bio: 'Mr. Waleed Hamad Al Sumait brings over 20 years of investment experience and currently serves as Senior Vice President at Wafra, where he has played a key role since joining the firm in 2000.',
+    fullBio: `With over two decades of experience in the investment field, Mr. Al Sumait holds a wealth of expertise. He holds a BBA degree from a prestigious institution in the United States and possesses a collection of certifications pertinent to the investment domain. His active engagement in numerous top-tier conferences within the industry underscores his commitment to professional development. Commencing his journey at Wafra in the year 2000, he has steadily progressed to his present role as Senior Vice President.`,
     expertise: ['Investment Management', 'Strategic Planning', 'Portfolio Development', 'Risk Analysis', 'Market Trends'],
     education: ['BBA, U.S.-based Institution', 'Multiple Certifications in Investment & Finance'],
-    achievements: ['Over 20 years of experience in investment and financial services', 'Senior Vice President at Wafra since 2000', 'Active participant in leading industry conferences','Recognized for strategic contributions to long-term investment planning']
-    }, {
+    achievements: ['Over 20 years of experience in investment and financial services', 'Senior Vice President at Wafra', 'Active participant in leading industry conferences','Recognized for strategic contributions to long-term investment planning']
+    }, 
+    {
     id: 3,
     name: 'Bader Al Hajeri',
     title: 'Chief Executive Officer',
     image: '/assets/team/bader.png',
-    bio: 'Bader Al Hajri is Vice President of the Real Estate Department at Kuwait Real Estate Company, with over 16 years of experience in real estate and public relations.',
-    fullBio: `Bader Al Hajri serves as Vice President in the Real Estate Department at Kuwait Real Estate Company, bringing over 16 years of experience across real estate investment and public relations. In his current role, he oversees the company’s real estate portfolio while managing strategic communications and external relationships.\n\nWith a strong reputation in the industry, Bader has built a wide network of connections with companies, associates, and governmental organizations. His ability to bridge business and public sector relationships has been instrumental in driving the company's visibility and operational success.\n\nHe remains dedicated to enhancing the efficiency and performance of Kuwait Real Estate Company through his leadership, deep market knowledge, and commitment to stakeholder engagement.`,
+    bio: 'Mr. Bader Al Hajri is Vice President of the Real Estate Department at Kuwait Real Estate Company, with over 16 years of experience in real estate and public relations.',
+    fullBio: `Bader Al Hajri is a Vice President in the Real Estate Department at Kuwait Real Estate Company. He has over 16 years of experience in real estate and public relations. In his current role, he is responsible for overseeing the company's real estate investments and public relations. He has a strong reputation and many connections with companies, associates, and state organizations. He is dedicated to using his extensive experience to improve the company's efficiency and relationships.`,
     expertise: ['Real Estate Investment', 'Public Relations', 'Stakeholder Engagement', 'Portfolio Oversight', 'Government Relations'],
     education: ['Bachelor’s degree (field and institution TBD)', 'Professional training in Real Estate or PR (if applicable)'],
     achievements: [
@@ -60,7 +63,7 @@ const TeamMember = () => {
     title: 'Board Member',
     image: '/assets/team/aoudah.png',
     bio: 'Sulaiman Khaled Aloudah is Group Financial Controller at INSHA’A Holding, with over 15 years of experience in corporate finance, M&A, and strategic planning.',
-    fullBio: `Sulaiman Khaled Aloudah is a seasoned senior finance executive with over 15 years of experience spanning corporate finance, mergers & acquisitions, and strategic planning. As Group Financial Controller at INSHA’A Holding, he oversees financial operations, risk management, and the implementation of ERP systems, playing a key role in driving financial efficiency and growth.\n\nSulaiman is recognized for his ability to align financial strategy with strong governance and operational compliance. He is certified in investment analysis and financial auditing, holding prestigious designations such as CGIA, CST, and CIDA. His academic foundation includes a Bachelor's degree in Accounting from Kuwait University.\n\nWith deep regional market expertise, board-level experience, and a strong command of IFRS and corporate compliance standards, Sulaiman contributes invaluable insight and leadership to the organization’s long-term financial planning and sustainability.`,
+    fullBio: `Sulaiman Khaled Aloudah is a senior finance executive with over 15 years of experience in corporate finance, M&A, and strategic planning. As Group Financial Controller at INSHA’A Holding, he leads financial operations, risk management, and ERP implementation. He has a strong track record in driving financial growth and aligning strategy with governance. Sulaiman is certified in investment analysis and financial auditing (CGIA, CST, CIDA) and holds a Bachelor’s in Accounting from Kuwait University. He brings board-level insight, regional market expertise, and a deep understanding of IFRS and corporate compliance.`,
     expertise: ['Corporate Finance', 'Mergers & Acquisitions', 'Strategic Planning', 'IFRS Compliance', 'Risk Management', 'ERP Implementation'],
     education: ['Bachelor of Accounting, Kuwait University', 'Certified in CGIA, CST, CIDA'],
     achievements: [
@@ -75,8 +78,8 @@ const TeamMember = () => {
     name: 'Saad Nasser Al Muneefi',
     title: 'Board Member',
     image: '/assets/team/saad.png',
-    bio: 'Fawaz Al-Roudan is the Managing Director of Ilimits Kuwait Company, with over 15 years of experience in finance and executive leadership across the region.',
-    fullBio: `Fawaz Al-Roudan is a seasoned finance professional with more than 15 years of experience in investment management, corporate finance, and executive leadership. He currently serves as the Managing Director of Ilimits Kuwait Company, where he leads strategic initiatives and oversees key financial operations.\n\nThroughout his career, Fawaz has held various executive roles in some of Kuwait’s most reputable financial institutions, earning recognition for his leadership and strategic insight. He also brings extensive board-level experience, serving on the boards of prominent regional investment firms such as First Securities Brokerage Company and Global Investment House.\n\nFawaz holds a Bachelor of Business Administration degree and is widely respected for his contributions to the growth and governance of financial entities in the region.`,
+    bio: 'Mr. Saad Al Muneefi is the Vice President of Asset Management at Kuwait Real Estate Company, bringing over 20 years of experience in real estate investment, asset optimization, and investor relations within the local market.',
+    fullBio: `Mr. Saad Al Muneefi is the Vice President of Assets Management at Kuwait Real Estate Company and commands more than 20 years of professional expertise. His role includes overlooking all local properties, investments and developments as well as investor relations. Among other requirements, the post responsibilities include identifying new local opportunities, conducting financial feasibilities and best use scenarios for new projects, return enhancement for existing properties, performance measurement and analysis, third party local real estate portfolio advisory and periodic updates on the Company strategy, business and results to investors and investment managers.`,
     expertise: ['Investment Management', 'Corporate Finance', 'Executive Leadership', 'Board Governance', 'Strategic Growth'],
     education: ['Bachelor of Business Administration'],
     achievements: [
@@ -98,14 +101,14 @@ const TeamMember = () => {
   }
   return <main>
       {/* Hero Section */}
-      <section className="bg-amber-900 text-white pt-48 pb-16">
+      <section className="bg-[#222222] text-white pt-48 pb-16">
         <div className="container mx-auto px-4">
-          <div className="flex items-center mb-8">
+          {/* <div className="flex items-center mb-8">
             <Link to="/AboutUs" className="text-amber-100 hover:text-white inline-flex items-center">
               <ArrowLeftIcon className="h-5 w-5 mr-2" />
               Back to Team
             </Link>
-          </div>
+          </div> */}
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
             <div className="lg:col-span-1">
               <div className="rounded-lg overflow-hidden shadow-lg h-[400px] w-full">
@@ -140,13 +143,13 @@ const TeamMember = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
-              <h3 className="text-xl font-bold mb-4 text-gray-900">
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">
                 Areas of Expertise
               </h3>
               {member.expertise && <ul className="space-y-2">
                   {member.expertise.map((item, index) => <li key={index} className="flex items-start">
                       <span className="inline-block w-2 h-2 bg-amber-800 rounded-full mt-2 mr-2"></span>
-                      <span className="text-gray-700">{item}</span>
+                      <span className="text-gray-700 text-xl">{item}</span>
                     </li>)}
                 </ul>}
             </div>
@@ -162,13 +165,13 @@ const TeamMember = () => {
                 </ul>}
             </div> */}
             <div>
-              <h3 className="text-xl font-bold mb-4 text-gray-900">
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">
                 Achievements
               </h3>
               {member.achievements && <ul className="space-y-2">
                   {member.achievements.map((item, index) => <li key={index} className="flex items-start">
                       <span className="inline-block w-2 h-2 bg-amber-800 rounded-full mt-2 mr-2"></span>
-                      <span className="text-gray-700">{item}</span>
+                      <span className="text-gray-700 text-xl">{item}</span>
                     </li>)}
                 </ul>}
             </div>
@@ -182,7 +185,7 @@ const TeamMember = () => {
           <h2 className="text-2xl font-bold mb-8 text-gray-900">
             Get to Know Our Leaders
           </h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-xl">
             {teamMembers.filter(m => m.id !== member.id).map(teamMember => <Link key={teamMember.id} to={`/team/${teamMember.id}`} className="group">
                   <div className="relative rounded-lg overflow-hidden h-40 mb-3">
                     <img src={teamMember.image} alt={teamMember.name} className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
@@ -191,7 +194,7 @@ const TeamMember = () => {
                   <h3 className="font-semibold text-gray-900 group-hover:text-amber-800 transition-colors">
                     {teamMember.name}
                   </h3>
-                  <p className="text-sm text-gray-600">{teamMember.title}</p>
+                  <p className="text-lg text-gray-600">{teamMember.title}</p>
                 </Link>)}
           </div>
         </div>

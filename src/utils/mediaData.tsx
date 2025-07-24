@@ -22,13 +22,13 @@ export interface MediaItem {
 }
 export const mediaItems: MediaItem[] = [
   {
-      id: 1,
-      image: '/assets/media/Media 1.jpg',
-      title: 'Real Estate Swap Approval: Sanam Real Estate Company and Fanan Real Estate Company',
-      date: 'March 16, 2023',
-      content: 'Sanam Real Estate Company has approved a real estate swap with its subsidiary, Fanan Real Estate Company K.S.C.C. The swap involves selling two properties in Bneid Al-Qar and Al-Farwaniya to Fanan Real Estate Company at a book value of KD 4,940,000. Additionally, the concession agreement rights of a land in Dubai, United Arab Emirates, will be transferred from Fanan Real Estate Company to a subsidiary of Sanam Real Estate Company, with a book value of KD 1,251,056',
-      type: 'press-release',
-      relatedItems: [2, 3],
+    id: 1,
+    image: '/assets/media/Media 1.jpg',
+    title: 'Real Estate Swap Approval: Sanam Real Estate Company and Fanan Real Estate Company',
+    date: 'March 16, 2023',
+    content: 'Sanam Real Estate Company has approved a real estate swap with its subsidiary, Fanan Real Estate Company K.S.C.C. The swap involves selling two properties in Bneid Al-Qar and Al-Farwaniya to Fanan Real Estate Company at a book value of KD 4,940,000. Additionally, the concession agreement rights of a land in Dubai, United Arab Emirates, will be transferred from Fanan Real Estate Company to a subsidiary of Sanam Real Estate Company, with a book value of KD 1,251,056',
+    type: 'press-release',
+    relatedItems: [2, 3],
   },
   {
     id: 2,
@@ -63,7 +63,7 @@ export const mediaItems: MediaItem[] = [
     title: 'Sanams Board of Directors Approves an Initial Partnership with an In-Kind Shares in the Capital of the Subsidiary "ERADAT".',
     date: 'August 9, 2023',
     content: 'On Wednesday 09/08/2023, the Board of Directors of Sanam Real Estate Company reached a preliminary agreement through its subsidiary “ERADAT International Real Estate Company K.S.C.C” with a public shareholding real estate company, to increase the capital of Eradat International Real Estate Company to reach KD 13,163,000. (The current capital of Eradat International Real Estate Company is 6,798,697 KD, and the accumulated losses will be amortized to bring the capital to 4,940,000 KD). Provided that the aforementioned capital increase be in-kind with a value of KD 8,223,000, representing 62.47% of the company’s capital (the in-kind increase consists of real estate with a total value of KD 49,463,000 and a net value of KD 8,223,000 after excluding the bank facilities granted with its guarantee). Thus, the share of Sanam Real Estate Company becomes 37.53%, equivalent to KD 4,940,000 of the capital, afterwards becoming an associate company.',
-    type: 'video',
+    type: 'press-release',
     relatedItems: [1, 8],
   },
   {
@@ -72,11 +72,20 @@ export const mediaItems: MediaItem[] = [
     title: 'Aqarat and Sanam Real Estate Enters into a Strategic Partnership in "ERADAT"',
     date: 'August 9, 2023',
     content: 'Aqarat - Kuwait Real Estate Company and Sanam Real Estate Company announced the signing of a preliminary agreement to enter a strategic partnership. This collaboration aims to introduce unique real estate products through a company partnership that is shariah compliant, named ERADAT International Real Estate Company. The partnership will result in a company with a diversified real estate portfolio, offering rewarding returns and enabling the distribution of periodic dividends to shareholders. Notably, this marks the first collaboration between these two entities, with a primary objective of delivering innovative and sustainable solutions within the realm of real estate investment. Following the signing of the preliminary agreement, the capital of ERADAT is poised to exceed KD 13 million. Aqarat - Company will be holding a majority share of 62.5%, while Sanam Real Estate Company will hold a share of 37.5%, after the completion of the strategic partnership procedures.',
-    type: 'podcast',
+    type: 'article',
     relatedItems: [2, 4],
   },
-  {
+    {
     id: 7,
+    image: '/assets/media/april_2025.webp',
+    title: 'ERADAT International Real Estate Company approves FY 2024 financials at General Assembly Meeting',
+    date: 'April 17, 2024',
+    content: 'The Ordinary General Assembly of Eradat International Real Estate Company was held at 12:00 PM on Thursday, 17/04/2025, at the company’s headquarters, in the presence of shareholders representing 131,629,267 shares out of the company’s total shares amounting to 131,630,000 shares, with an attendance rate of 99.99%. The meeting was attended by the Chairman of the Board of Directors, Dr. Sulaiman Tareq Al Abduljader, the Company Auditor Mr. Abdulaziz Nasser Jabr, representing Mr. Abdullatif Al Aiban from Al Qatami, Al Aiban & Partners (Grant Thornton), and Dr. Mohammed Abdulrahman Al Sharafa – Member of the Sharia Supervisory Board. Dr. Sulaiman Tareq Al Abduljader, Chairman of the Board, opened the meeting by welcoming the esteemed shareholders and presented the agenda as follows: First: Discussing and approving the Board of Directors’ Report for the fiscal year ending 31/12/2024. Second: Discussing and approving the External Auditor’s Report for the fiscal year ending 31/12/2024. Third: Discussing and approving the Sharia Supervisory Board’s Report for the fiscal year ending 31/12/2024. Fourth: Discussing and approving the Company’s financial statements for the fiscal year ending 31/12/2024. Fifth: Approving the deduction of 10% to the Legal Reserve, amounting to KD 71,905. Sixth: Discussing the deduction of 10% to the Voluntary Reserve, amounting to KD 71,905. Seventh: Reviewing any violations or penalties (financial or otherwise) issued by regulatory authorities. The Chairman stated there were none in 2024. Eighth: Discussing the Board’s proposal not to distribute dividends for the fiscal year ending 31/12/2024. Ninth: Discussing the non-distribution of remuneration to the members of the Board of Directors. Tenth: Reviewing related party transactions and authorizing the Board to continue such transactions until the next General Assembly for FY 2025. Eleventh: Discharging the Board members from liability related to their legal, financial, and administrative actions for FY 2024. Twelfth: Reappointing Mr. Abdullatif Al Aiban – License No. (94 A), from Al Qatami, Al Aiban & Partners (Grant Thornton) as External Auditor for FY 2025, and authorizing the Board to determine the fees. Thirteenth: Reappointing the following Sharia Supervisory Board members for FY 2025, and authorizing the Board to determine their fees: Dr. Hamad Yousef Al Mazrouei, Dr. Abdulrahman Mohammed Al Baloul, and Dr. Mohammed Abdulrahman Al Sharafa. The meeting concluded at 12:15 PM.',
+    type: 'article',
+    relatedItems: [4, 6],
+  },
+  {
+    id: 8,
     image: '/assets/media/9_may-2024.webp',
     title: 'ERADAT International Real Estate Company convenes Ordinary General Assembly Meetings for 2023',
     date: 'May 9, 2024',
@@ -84,15 +93,7 @@ export const mediaItems: MediaItem[] = [
     type: 'press-release',
     relatedItems: [2, 8],
   },
-  {
-    id: 8,
-    image: '/assets/media/april_2025.webp',
-    title: 'ERADAT International Real Estate Company approves FY 2024 financials at General Assembly Meeting',
-    date: 'April 17, 2024',
-    content: 'The Ordinary General Assembly of Eradat International Real Estate Company was held at 12:00 PM on Thursday, 17/04/2025, at the company’s headquarters, in the presence of shareholders representing 131,629,267 shares out of the company’s total shares amounting to 131,630,000 shares, with an attendance rate of 99.99%. The meeting was attended by the Chairman of the Board of Directors, Dr. Sulaiman Tareq Al Abduljader, the Company Auditor Mr. Abdulaziz Nasser Jabr, representing Mr. Abdullatif Al Aiban from Al Qatami, Al Aiban & Partners (Grant Thornton), and Dr. Mohammed Abdulrahman Al Sharafa – Member of the Sharia Supervisory Board. Dr. Sulaiman Tareq Al Abduljader, Chairman of the Board, opened the meeting by welcoming the esteemed shareholders and presented the agenda as follows: First: Discussing and approving the Board of Directors’ Report for the fiscal year ending 31/12/2024. Second: Discussing and approving the External Auditor’s Report for the fiscal year ending 31/12/2024. Third: Discussing and approving the Sharia Supervisory Board’s Report for the fiscal year ending 31/12/2024. Fourth: Discussing and approving the Company’s financial statements for the fiscal year ending 31/12/2024. Fifth: Approving the deduction of 10% to the Legal Reserve, amounting to KD 71,905. Sixth: Discussing the deduction of 10% to the Voluntary Reserve, amounting to KD 71,905. Seventh: Reviewing any violations or penalties (financial or otherwise) issued by regulatory authorities. The Chairman stated there were none in 2024. Eighth: Discussing the Board’s proposal not to distribute dividends for the fiscal year ending 31/12/2024. Ninth: Discussing the non-distribution of remuneration to the members of the Board of Directors. Tenth: Reviewing related party transactions and authorizing the Board to continue such transactions until the next General Assembly for FY 2025. Eleventh: Discharging the Board members from liability related to their legal, financial, and administrative actions for FY 2024. Twelfth: Reappointing Mr. Abdullatif Al Aiban – License No. (94 A), from Al Qatami, Al Aiban & Partners (Grant Thornton) as External Auditor for FY 2025, and authorizing the Board to determine the fees. Thirteenth: Reappointing the following Sharia Supervisory Board members for FY 2025, and authorizing the Board to determine their fees: Dr. Hamad Yousef Al Mazrouei, Dr. Abdulrahman Mohammed Al Baloul, and Dr. Mohammed Abdulrahman Al Sharafa. The meeting concluded at 12:15 PM.',
-    type: 'video',
-    relatedItems: [4, 6],
-  },
+
 ]
 // Helper function to get the type icon
 export const getTypeIcon = (type: string) => {

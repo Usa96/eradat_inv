@@ -32,9 +32,10 @@ const Media = () => {
       }
     }
   }, [location.state])
-  const filteredMedia = mediaItems.filter((item) => {
-    return activeFilter === 'all' || item.type === activeFilter
-  })
+const filteredMedia = [...mediaItems]
+  .filter((item) => activeFilter === 'all' || item.type === activeFilter)
+  .sort((a, b) => b.id - a.id) // Or use date sort if preferred
+
   const featuredMedia = mediaItems.filter((item) => item.featured)
   return (
     <main>
@@ -281,20 +282,6 @@ const Media = () => {
                   <span className="ml-1">Articles</span>
                 </button>
                 <button
-                  onClick={() => setActiveFilter('video')}
-                  className={`px-4 py-2 rounded-full text-sm font-medium transition-colors flex items-center ${activeFilter === 'video' ? 'bg-red-600 text-white' : 'bg-gray-100 text-gray-700 hover:bg-gray-200'}`}
-                >
-                  {getTypeIcon('video')}
-                  <span className="ml-1">Videos</span>
-                </button>
-                <button
-                  onClick={() => setActiveFilter('podcast')}
-                  className={`px-4 py-2 rounded-full text-sm font-medium transition-colors flex items-center ${activeFilter === 'podcast' ? 'bg-purple-600 text-white' : 'bg-gray-100 text-gray-700 hover:bg-gray-200'}`}
-                >
-                  {getTypeIcon('podcast')}
-                  <span className="ml-1">Podcasts</span>
-                </button>
-                <button
                   onClick={() => setActiveFilter('press-release')}
                   className={`px-4 py-2 rounded-full text-sm font-medium transition-colors flex items-center ${activeFilter === 'press-release' ? 'bg-green-600 text-white' : 'bg-gray-100 text-gray-700 hover:bg-gray-200'}`}
                 >
@@ -315,7 +302,7 @@ const Media = () => {
                       className="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow cursor-pointer"
                       onClick={() => setSelectedMedia(item)}
                     >
-                      <div className="relative h-48 overflow-hidden">
+                      <div className="relative h-[300px] overflow-hidden">
                         <img
                           src={item.image}
                           alt={item.title}

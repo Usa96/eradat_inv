@@ -14,7 +14,7 @@ export const AboutSection = () => {
             <img src="/assets/white_logo.png" // Replace with your actual filename/path
               alt="ERADAT Logo" className="h-40 mx-auto mb-8"/>
             <p className="text-xl md:text-xl leading-relaxed mb-8">
-              Your Gateway to Real Estate. ERADAT is a premier real estate
+              ERADAT is a premier real estate
               investment company with a proven track record of
               delivering strong returns for our
               investors. Our expertise spans residential, commercial, and
