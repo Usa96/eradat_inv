@@ -345,7 +345,7 @@ const Properties = () => {
                             </span>
                           </div>
                         </div>
-                        <div className="flex items-center">
+                        {/* <div className="flex items-center">
                           <div className="h-12 w-12 rounded-full bg-amber-100 flex items-center justify-center mr-4">
                             <CalendarIcon className="h-6 w-6 text-amber-800" />
                           </div>
@@ -357,7 +357,7 @@ const Properties = () => {
                               {selectedProperty.yearBuilt}
                             </span>
                           </div>
-                        </div>
+                        </div> */}
                         <div className="flex items-center">
                           <div className="h-12 w-12 rounded-full bg-amber-100 flex items-center justify-center mr-4">
                             {getPropertyTypeIcon(selectedProperty.type)}

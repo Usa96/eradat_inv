@@ -43,8 +43,8 @@ export const CompanyHighlights = () => {
         <div className="bg-amber-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
           <LayoutIcon className="h-8 w-8 text-amber-800" />
         </div>
-        <p className="text-4xl font-bold mb-2">65 sqft</p>
-        <p>Gross Leasable Area (thousand)</p>
+        <p className="text-4xl font-bold mb-2">65 </p>
+        <p>Gross Leasable Area (thousand) sqft </p>
       </div>
 
       {/* Block 4 */}
