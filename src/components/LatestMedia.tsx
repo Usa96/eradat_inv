@@ -12,7 +12,7 @@ export const LatestMedia = () => {
           <h2 className="text-3xl font-bold mb-4 text-gray-900">
             Latest Media
           </h2>
-          <p className="text-gray-700 max-w-2xl mx-auto">
+          <p className="text-gray-700 max-w-2xl mx-auto text-xl">
             Stay updated with the latest news, market insights, and company
             announcements.
           </p>
@@ -23,7 +23,7 @@ export const LatestMedia = () => {
               key={item.id}
               className="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow"
             >
-              <div className="h-48 overflow-hidden">
+              <div className="h-[300px] overflow-hidden">
                 <img
                   src={item.image}
                   alt={item.title}

@@ -96,16 +96,6 @@ const filteredMedia = [...mediaItems]
                     By {selectedMedia.author}
                   </p>
                 )}
-                <div className="flex items-center space-x-3 mb-6">
-                  <button className="inline-flex items-center text-gray-600 hover:text-amber-800">
-                    <ShareIcon className="h-5 w-5 mr-1" />
-                    Share
-                  </button>
-                  <button className="inline-flex items-center text-gray-600 hover:text-amber-800">
-                    <BookmarkIcon className="h-5 w-5 mr-1" />
-                    Save
-                  </button>
-                </div>
               </div>
               {/* Media Image */}
               <div className="mb-8">
@@ -126,7 +116,7 @@ const filteredMedia = [...mediaItems]
                 </div>
               </div>
               {/* Media Content */}
-              <div className="prose prose-lg max-w-none mb-12">
+              <div className="prose prose-lg max-w-none mb-12 xl text-xl">
                 {selectedMedia.content
                   ?.split('\n\n')
                   .map((paragraph, index) => (
