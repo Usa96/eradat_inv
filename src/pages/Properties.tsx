@@ -334,7 +334,7 @@ const Properties = () => {
                         </div>
                         <div className="flex items-center">
                           <div className="h-12 w-12 rounded-full bg-amber-100 flex items-center justify-center mr-4">
-                            <DollarSignIcon className="h-6 w-6 text-amber-800" />
+                            <MapIcon className="h-6 w-6 text-amber-800" />
                           </div>
                           <div>
                             <span className="block text-sm text-gray-500">
@@ -345,19 +345,6 @@ const Properties = () => {
                             </span>
                           </div>
                         </div>
-                        {/* <div className="flex items-center">
-                          <div className="h-12 w-12 rounded-full bg-amber-100 flex items-center justify-center mr-4">
-                            <CalendarIcon className="h-6 w-6 text-amber-800" />
-                          </div>
-                          <div>
-                            <span className="block text-sm text-gray-500">
-                              Year Built
-                            </span>
-                            <span className="font-bold text-xl text-gray-900">
-                              {selectedProperty.yearBuilt}
-                            </span>
-                          </div>
-                        </div> */}
                         <div className="flex items-center">
                           <div className="h-12 w-12 rounded-full bg-amber-100 flex items-center justify-center mr-4">
                             {getPropertyTypeIcon(selectedProperty.type)}
@@ -395,10 +382,6 @@ const Properties = () => {
                           title={`Map showing location of ${selectedProperty.title}`}
                         ></iframe>
                       </div>
-                    <p className="mt-3 text-gray-600 flex items-center">
-                      <MapPinIcon className="h-5 w-5 mr-2 text-amber-800" />
-                      {selectedProperty.location} -{' '}
-                    </p>
                   </div>
                     </div>
                 </div>

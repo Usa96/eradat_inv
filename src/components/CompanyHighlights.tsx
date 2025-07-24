@@ -13,7 +13,7 @@ export const CompanyHighlights = () => {
       <h2 className="text-3xl font-bold mb-4 text-white">
         Why Choose ERADAT
       </h2>
-      <p className="text-white max-w-2xl mx-auto">
+      <p className="text-white max-w-2xl mx-auto text-xl">
         Our proven track record and investment approach has delivered
         consistent returns for our clients.
       </p>

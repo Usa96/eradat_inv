@@ -246,7 +246,7 @@ const AboutUs = () => {
                     Investor-Centric Performance
                   </h3>
                   <p className="text-gray-600 text-xl">
-                    Our mission is to be a vehicle for consistent, periodic distributions—ensuring regular, reliable income to our stakeholder base.
+                    Our aim is to be a vehicle for consistent, periodic distributions—ensuring regular, reliable income to our stakeholder base.
                   </p>
                 </div>
               </div>
