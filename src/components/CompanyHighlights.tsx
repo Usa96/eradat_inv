@@ -3,7 +3,7 @@ import { BarChartIcon, BuildingIcon, LayoutIcon, PercentIcon } from 'lucide-reac
 export const CompanyHighlights = () => {
   return <section
   className="py-24 bg-fixed bg-cover bg-center text-white"
-  style={{ backgroundImage: "/assets/company_highlights.jpg"}}>
+  style={{ backgroundImage: "#"}}>
   <div className="bg-black/50 w-full h-full absolute top-0 left-0 z-0"></div>
 
   {/* Content */}
