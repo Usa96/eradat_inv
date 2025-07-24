@@ -53,38 +53,7 @@ const AboutUs = () => {
     image: '/assets/team/saad.png',
     bio: 'An experienced finance executive with a BBA and 15+ years in Kuwait’s financial sector. Board member of First Securities Brokerage and Global Investment House.',
   }]
-  const milestones = [
-    {
-      year: 2012,
-      title: 'Founded',
-      description:
-        'Lorem Ipsum Delator',
-    },
-    {
-      year: 2015,
-      title: 'First Fund',
-      description:
-        'Lorem Ipsum Delator',
-    },
-    {
-      year: 2018,
-      title: 'Expansion',
-      description:
-        'Lorem Ipsum Delator',
-    },
-    {
-      year: 2020,
-      title: 'Technology Platform',
-      description:
-        'Lorem Ipsum Delator',
-    },
-    {
-      year: 2023,
-      title: 'Today',
-      description:
-        'Lorem Ipsum Delator',
-    },
-  ];
+
   return <main>
       {/* Hero Section */}
       <section
@@ -112,13 +81,6 @@ const AboutUs = () => {
         </div>
 
         <div className="relative z-10 container mx-auto px-4 py-24">
-          {/* Section Title */}
-          <div className="text-center text-white mb-12">
-            <h2 className="text-3xl md:text-5xl font-semibold tracking-wide">
-              Key Performance Highlights
-            </h2>
-          </div>
-
           {/* Grid Counters */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-white">
             {/* Row 1 */}
@@ -290,52 +252,6 @@ const AboutUs = () => {
               </div>
             </div>
           </section>
-        </div>
-      </section>
-
-      {/* Timeline Section */}
-      <section className="py-20 bg-gray-900 text-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-6 text-amber-100">
-              Our Journey
-            </h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              From humble beginnings to industry leadership, our path has been
-              defined by vision, perseverance, and a commitment to excellence.
-            </p>
-          </div>
-          <div className="relative max-w-4xl mx-auto">
-            {/* Timeline line */}
-            <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-amber-700"></div>
-            {/* Timeline items */}
-            {milestones.map((milestone, index) => (
-              <div
-                key={index}
-                className={`relative z-10 mb-12 flex ${index % 2 === 0 ? 'flex-row-reverse' : ''}`}
-              >
-                <div className="w-1/2"></div>
-                <div className="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/4">
-                  <div className="w-10 h-10 bg-amber-500 rounded-full border-4 border-gray-900 flex items-center justify-center">
-                    <div className="w-3 h-3 bg-amber-200 rounded-full"></div>
-                  </div>
-                </div>
-                <div
-                  className={`w-1/2 ${index % 2 === 0 ? 'pr-12 text-right' : 'pl-12'}`}
-                >
-                  <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
-                    <span className="text-amber-400 font-bold text-xl">
-                      {milestone.year}
-                    </span>
-                    <h3 className="text-xl font-semibold mb-2 text-white">
-                      {milestone.title}
-                    </h3>
-                    <p className="text-gray-300">{milestone.description}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
         </div>
       </section>
 

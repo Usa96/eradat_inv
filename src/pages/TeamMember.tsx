@@ -115,7 +115,7 @@ const TeamMember = () => {
             <div className="lg:col-span-2">
               <h1 className="text-4xl font-bold mb-2">{member.name}</h1>
               <p className="text-xl text-amber-200 mb-6">{member.title}</p>
-              <p className="text-amber-100 mb-6">{member.bio}</p>
+              <p className="text-amber-100 mb-6 text-xl">{member.bio}</p>
             </div>
           </div>
         </div>
@@ -126,7 +126,7 @@ const TeamMember = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold mb-6 text-gray-900">Biography</h2>
-            <div className="prose prose-lg max-w-none text-gray-700">
+            <div className="prose prose-lg text-xl max-w-none text-gray-700">
               {member.fullBio?.split('\n\n').map((paragraph, index) => <p key={index} className="mb-4">
                   {paragraph}
                 </p>)}
@@ -150,7 +150,7 @@ const TeamMember = () => {
                     </li>)}
                 </ul>}
             </div>
-            <div>
+            {/* <div>
               <h3 className="text-xl font-bold mb-4 text-gray-900">
                 Education
               </h3>
@@ -160,7 +160,7 @@ const TeamMember = () => {
                       <span className="text-gray-700">{item}</span>
                     </li>)}
                 </ul>}
-            </div>
+            </div> */}
             <div>
               <h3 className="text-xl font-bold mb-4 text-gray-900">
                 Achievements

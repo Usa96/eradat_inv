@@ -53,8 +53,8 @@ const Properties = () => {
         "image": "/assets/durrar.jpg",
         "description": "Block 84, 85, 86, and 87 are situated in lane-1 near the 4th Ring road in Riggae. These four prominent buildings, characterized by their identical and spacious design, grace the skyline of the area. Each block is independently located on its own plot of land. These buildings serve a dual purpose, accommodating both residential and commercial spaces. Each of these buildings follows a consistent layout on every floor and within the individual flats. On the ground floor of each block, there is ample parking space available, complemented by adjacent shops.",
         "roi": '#',
-        "occupancy": 'None',
-        "sqft": 'None',
+        "occupancy": 'Reggae',
+        "sqft": '4000',
         "yearBuilt": 'None',
         "additionalImages": [],
         "coordinates": {
@@ -70,8 +70,8 @@ const Properties = () => {
         "image": "/assets/domus.jpg",
         "description": "Situated in close proximity to numerous major tourism hubs in Dubai, this cutting-edge staff housing accommodation is strategically positioned to cater to the housing requirements of a diverse range of hospitality companies located within a convenient 25-minute radius from the site. The comprehensive project encompasses an impressive 392,000 square feet of built-up area, with 233,000 square feet designated as rentable space. This substantial space will be designed to accommodate over 2,000 hospitality staff members representing varying employment levels. The core objective of this project is to cultivate a vibrant and cohesive community, fostering connections among hospitality professionals spanning various disciplines and hailing from different hotel brands and hospitality-related enterprises.",
         "roi": 'None',
-        "occupancy": 'None',
-        "sqft": 'None',
+        "occupancy": 'Dubai',
+        "sqft": '134,741',
         "yearBuilt": 'None',
         "additionalImages": [],
         "coordinates": {
@@ -87,8 +87,8 @@ const Properties = () => {
         "image": "/assets/farwaniya.jpg",
         "description": "The property, located in Al Farwaniya, is situated within a high-population-density investment area covering 1011 square meters. Positioned between three streets, one of which is a primary road, it benefits from its location in a service-rich area with amenities such as a mosque, parking facilities, and schools. The property itself comprises a basement, a shop, a ground floor, and 40 apartments.",
         "roi": 'None',
-        "occupancy": 'None',
-        "sqft": 'None',
+        "occupancy": 'Farwaniya',
+        "sqft": '1,011',
         "yearBuilt": 'None',
         "additionalImages": [],
         "coordinates": {
@@ -104,8 +104,8 @@ const Properties = () => {
         "image": "/assets/fintas.jpg",
         "description": "Pearl Fintas, situated in the Al-Fintas area of Kuwait, is an apartment complex characterized by its five-story cluster design. This residential building, constructed in 1984, occupies a plot area of 3,544 square meters and boasts a built-up area of 5,750 square meters. Pearl Fintas exclusively features studio apartments, each complemented with its own balcony. The complex offers a range of recreational amenities, including a swimming pool and a multi-use court suitable for basketball, tennis, and volleyball enthusiasts. Additionally, ample car parking is available for both residents and visitors. Conveniently accessible from the Fahaheel Expressway, Pearl Fintas is also conveniently located just a short distance from Egaila Beach Park.",
         "roi": 'None',
-        "occupancy": 'None',
-        "sqft": 'None',
+        "occupancy": 'Fintas',
+        "sqft": '3,544',
         "yearBuilt": 'None',
         "additionalImages": [],
         "coordinates": {
@@ -121,8 +121,8 @@ const Properties = () => {
         "image": "/assets/manar.jpg",
         "description": "Situated at Plot No. 22, Commercial Center, Habib Munawar Street in Farwaniya, Al Manar is a 7-story commercial building that includes a basement, ground, and mezzanine floors. The basement, ground, and mezzanine floors house a diverse range of shops, while the upper floors are designated for office spaces. There is ample parking available on the ground level, accessible from the front, back, and sides of the complex.",
         "roi": 'None',
-        "occupancy": 'None',
-        "sqft": 'None',
+        "occupancy": 'Farwaniya',
+        "sqft": '1,002',
         "yearBuilt": 'None',
         "additionalImages": [],
         "coordinates": {
@@ -138,8 +138,8 @@ const Properties = () => {
         "image": "/assets/bneid_al_gar.jpg",
         "description": "The building is strategically located near Al Salam Hospital, making it attractive for businesses, especially in the healthcare industry. It consists of a café, a pharmacy, and multiple clinics spread across nine floors. The building features a basement for parking, a ground floor with the café and pharmacy, nine floors dedicated to clinics, and a rooftop area that holds potential for additional utilization. Its proximity to Al Salam Hospital enhances its appeal, attracting businesses in the healthcare sector and creating a medical hub in the area.",
         "roi": 'None',
-        "occupancy":' None',
-        "sqft": 'None',
+        "occupancy":'Bneid Al Gar',
+        "sqft": '500',
         "yearBuilt": 'None',
         "additionalImages": [],
         "coordinates": {
@@ -155,8 +155,8 @@ const Properties = () => {
         "image": "/assets/ibn_khaldoon.jpg",
         "description": "The Ibn Khaldoun Commercial Complex, situated at Block 39, Plot No. 143 on Ibn Khaldoun Street in Hawally, is a well-known and sizable establishment in the area with a longstanding presence. This complex comprises two towers, one with five storeys and the other with four levels, including a basement, ground floor, mezzanine, and first floor. The commercial section of the building houses numerous shops, and on-site car parking is conveniently available at the ground level, accessible from both the front and rear of the complex.",
         "roi": 'None',
-        "occupancy": 'None',
-        "sqft": 'None',
+        "occupancy": 'Hawally',
+        "sqft": '3,227',
         "yearBuilt": 'None',
         "additionalImages": [],
         "coordinates": {
@@ -380,7 +380,6 @@ const Properties = () => {
                       </h3>
                       <div className="mt-10 mb-6">
                     <h3 className="text-2xl font-semibold mb-4 text-gray-900">
-                      Property Location
                     </h3>
                       <div className="rounded-lg overflow-hidden border border-gray-200 shadow-md h-[400px]">
                         <iframe
