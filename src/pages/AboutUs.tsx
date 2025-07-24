@@ -42,7 +42,7 @@ const AboutUs = () => {
     bio: "Has 16+ years of experience in real estate and public relations. Oversees real estate investments and maintains strong relationships across government and private sectors.",
   }, {
     id: 4,
-    name: 'Sulaiman Al Awdah',
+    name: 'Sulaiman Khaled Aloudah',
     title: 'Board Member',
     image: '/assets/team/aoudah.png',
     bio: 'Over 15 years of expertise in corporate finance, M&A, and strategic planning. Certified in CGIA, CST, and CIDA, with strong IFRS knowledge and board-level insight.',

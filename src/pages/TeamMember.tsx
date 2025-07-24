@@ -47,8 +47,8 @@ const TeamMember = () => {
     name: 'Bader Al Hajeri',
     title: 'Chief Executive Officer',
     image: '/assets/team/bader.png',
-    bio: 'Mr. Bader Al Hajri is Vice President of the Real Estate Department at Kuwait Real Estate Company, with over 16 years of experience in real estate and public relations.',
-    fullBio: `Bader Al Hajri is a Vice President in the Real Estate Department at Kuwait Real Estate Company. He has over 16 years of experience in real estate and public relations. In his current role, he is responsible for overseeing the company's real estate investments and public relations. He has a strong reputation and many connections with companies, associates, and state organizations. He is dedicated to using his extensive experience to improve the company's efficiency and relationships.`,
+    bio: 'Mr. Bader Al Hajeri is Vice President of the Real Estate Department at Kuwait Real Estate Company, with over 16 years of experience in real estate and public relations.',
+    fullBio: `Bader Al Hajeri is a Vice President in the Real Estate Department at Kuwait Real Estate Company. He has over 16 years of experience in real estate and public relations. In his current role, he is responsible for overseeing the company's real estate investments and public relations. He has a strong reputation and many connections with companies, associates, and state organizations. He is dedicated to using his extensive experience to improve the company's efficiency and relationships.`,
     expertise: ['Real Estate Investment', 'Public Relations', 'Stakeholder Engagement', 'Portfolio Oversight', 'Government Relations'],
     education: ['Bachelor’s degree (field and institution TBD)', 'Professional training in Real Estate or PR (if applicable)'],
     achievements: [
