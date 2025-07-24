@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import '@fontsource/crimson-text';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
+import ScrollToTop from './components/ScrollToTop';
 // Home page components
 import { HeroSection } from './components/HeroSection';
 import { PropertiesCarousel } from './components/PropertiesCarousel';
@@ -18,6 +19,7 @@ import Contact from './pages/Contact';
 import TeamMember from './pages/TeamMember';
 export function App() {
   return <Router>
+      <ScrollToTop />
       <div className="w-full min-h-screen bg-white">
         <Header />
         <Routes>

@@ -35,14 +35,14 @@ const Contact = () => {
               </h2>
               <div className="space-y-6">
                 <div className="flex items-start">
-                  <div className="bg-amber-100 p-3 rounded-full mr-4">
-                    <MapPinIcon className="h-6 w-6 text-amber-800" />
+                  <div className="bg-yellow-900 p-3 rounded-full mr-4">
+                    <MapPinIcon className="h-6 w-6 text-white" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg text-gray-900">
                       Visit Us
                     </h3>
-                    <p className="text-gray-700">
+                    <p className="text-gray-700 text-xl">
                       Salhiya Complex
                       <br />
                       Qibla
@@ -52,21 +52,21 @@ const Contact = () => {
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <div className="bg-amber-100 p-3 rounded-full mr-4">
-                    <PhoneIcon className="h-6 w-6 text-amber-800" />
+                  <div className="bg-yellow-900 p-3 rounded-full mr-4">
+                    <PhoneIcon className="h-6 w-6 text-white" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg text-gray-900">
                       Call Us
                     </h3>
-                    <p className="text-gray-700">
+                    <p className="text-gray-700 text-xl">
                       Main: (+965) 22396666
                     </p>
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <div className="bg-amber-100 p-3 rounded-full mr-4">
-                    <MailIcon className="h-6 w-6 text-amber-800" />
+                  <div className="bg-yellow-900 p-3 rounded-full mr-4">
+                    <MailIcon className="h-6 w-6 text-white" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg text-gray-900">
@@ -78,8 +78,8 @@ const Contact = () => {
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <div className="bg-amber-100 p-3 rounded-full mr-4">
-                    <ClockIcon className="h-6 w-6 text-amber-800" />
+                  <div className="bg-yellow-900 p-3 rounded-full mr-4">
+                    <ClockIcon className="h-6 w-6 text-white" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg text-gray-900">
@@ -98,13 +98,13 @@ const Contact = () => {
                   Connect With Us
                 </h3>
                 <div className="flex space-x-4">
-                  <a href="https://x.com/Eradatkw" className="bg-amber-100 p-3 rounded-full text-amber-800 hover:bg-amber-200 transition-colors" aria-label="X (Twitter)">
+                  <a href="https://x.com/Eradatkw" className="bg-yellow-900 p-3 rounded-full text-white hover:bg-amber-700 transition-colors duration-300" aria-label="X (Twitter)">
                     <SiX className="h-5 w-5" />
                   </a>
-                  <a href="https://www.instagram.com/eradatkw/#" className="bg-amber-100 p-3 rounded-full text-amber-800 hover:bg-amber-200 transition-colors">
+                  <a href="https://www.instagram.com/eradatkw/#" className="bg-yellow-900 p-3 rounded-full text-white hover:bg-amber-700 transition-colors duration-300">
                     <InstagramIcon className="h-5 w-5" />
                   </a>
-                  <a href="https://www.linkedin.com/company/eradat-international-real-estate/" className="bg-amber-100 p-3 rounded-full text-amber-800 hover:bg-amber-200 transition-colors">
+                  <a href="https://www.linkedin.com/company/eradat-international-real-estate/" className="bg-yellow-900 p-3 rounded-full text-white hover:bg-amber-700 transition-colors duration-300">
                     <LinkedinIcon className="h-5 w-5" />
                   </a>
                 </div>

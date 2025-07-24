@@ -7,8 +7,8 @@ interface Property {
   title: string;
   location: string;
   description: string;
-
 }
+
 export const PropertiesCarousel = () => {
   const properties: Property[] = [{
     id: 1,
@@ -96,7 +96,7 @@ export const PropertiesCarousel = () => {
           {/* Left content side */}
           <div className="w-full lg:w-1/2 p-8 lg:p-16 flex flex-col justify-center">
             <h2 className="text-4xl lg:text-5xl font-light mb-6 text-gray-700 tracking-wider">
-              PROPERTY SPOTLIGHT
+              PROPERTIES
             </h2>
             {properties.map((property, index) => (
               <div

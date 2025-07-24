@@ -21,7 +21,7 @@ export const AboutSection = () => {
                   mixed-use developments across key markets.
                 </p>
             <Link to="/about" className="inline-block bg-amber-800 hover:bg-amber-900 text-white font-medium py-3 px-8 rounded-md transition-colors">
-              Learn More About Us
+              Learn More
             </Link>
           </div>
         </div>

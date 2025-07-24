@@ -118,7 +118,7 @@ const Properties = () => {
         "title": "Al Manar Complex",
         "location": "Farwaniya, Kuwait",
         "type": "Commercial",
-        "image": "/assets/manar.jpg",
+        "image": "/assets/manar_2.jpg",
         "description": "Situated at Plot No. 22, Commercial Center, Habib Munawar Street in Farwaniya, Al Manar is a 7-story commercial building that includes a basement, ground, and mezzanine floors. The basement, ground, and mezzanine floors house a diverse range of shops, while the upper floors are designated for office spaces. There is ample parking available on the ground level, accessible from the front, back, and sides of the complex.",
         "roi": 'None',
         "occupancy": 'Farwaniya',

@@ -2,8 +2,8 @@ import React from 'react';
 import { BarChartIcon, BuildingIcon, LayoutIcon, PercentIcon } from 'lucide-react';
 export const CompanyHighlights = () => {
   return <section
-  className="py-24 bg-fixed bg-cover bg-center text-white"
-  style={{ backgroundImage: "#"}}>
+  className="relative py-24 bg-fixed bg-cover bg-center text-white"
+  style={{ backgroundImage: "url('/assets/company_highlights.avif')" }}>
   <div className="bg-black/50 w-full h-full absolute top-0 left-0 z-0"></div>
 
   {/* Content */}
@@ -20,36 +20,36 @@ export const CompanyHighlights = () => {
 
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-xl">
       {/* Block 1 */}
-      <div className="bg-white/90 p-8 rounded-lg shadow-md text-center text-gray-900">
-        <div className="bg-amber-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-          <BarChartIcon className="h-8 w-8 text-amber-800" />
+      <div className="bg-white/90 p-8 rounded-lg shadow-md text-center text-yellow-900">
+        <div className="bg-yellow-900 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+          <BarChartIcon className="h-8 w-8 text-white" />
         </div>
         <p className="text-4xl font-bold mb-2">KD 54M+</p>
         <p>Assets Under Management</p>
       </div>
 
       {/* Block 2 */}
-      <div className="bg-white/90 p-8 rounded-lg shadow-md text-center text-gray-900">
-        <div className="bg-amber-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-          <BuildingIcon className="h-8 w-8 text-amber-800" />
+      <div className="bg-white/90 p-8 rounded-lg shadow-md text-center text-yellow-900">
+        <div className="bg-yellow-900 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+          <BuildingIcon className="h-8 w-8 text-white" />
         </div>
         <p className="text-4xl font-bold mb-2">14</p>
         <p>Properties</p>
       </div>
 
       {/* Block 3 */}
-      <div className="bg-white/90 p-8 rounded-lg shadow-md text-center text-gray-900">
-        <div className="bg-amber-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-          <LayoutIcon className="h-8 w-8 text-amber-800" />
+      <div className="bg-white/90 p-8 rounded-lg shadow-md text-center text-yellow-900">
+        <div className="bg-yellow-900 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+          <LayoutIcon className="h-8 w-8 text-white" />
         </div>
         <p className="text-4xl font-bold mb-2">65 </p>
         <p>Gross Leasable Area (thousand) sq meters </p>
       </div>
 
       {/* Block 4 */}
-      <div className="bg-white/90 p-8 rounded-lg shadow-md text-center text-gray-900">
-        <div className="bg-amber-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-          <PercentIcon className="h-8 w-8 text-amber-800" />
+      <div className="bg-white/90 p-8 rounded-lg shadow-md text-center text-yellow-900">
+        <div className="bg-yellow-900 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+          <PercentIcon className="h-8 w-8 text-white" />
         </div>
         <p className="text-4xl font-bold mb-2">90%</p>
         <p>Target Dividend Ratio</p>
