@@ -3,8 +3,7 @@ import { BarChartIcon, BuildingIcon, LayoutIcon, PercentIcon } from 'lucide-reac
 export const CompanyHighlights = () => {
   return <section
   className="py-24 bg-fixed bg-cover bg-center text-white"
-  style={{ backgroundImage: "url('/assets/company_highlights.webp')"}}>
-  {/* Optional overlay for better text contrast */}
+  style={{ backgroundImage: "/assets/company_highlights.jpg"}}>
   <div className="bg-black/50 w-full h-full absolute top-0 left-0 z-0"></div>
 
   {/* Content */}
@@ -23,7 +22,7 @@ export const CompanyHighlights = () => {
       {/* Block 1 */}
       <div className="bg-white/90 p-8 rounded-lg shadow-md text-center text-gray-900">
         <div className="bg-amber-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-          <BuildingIcon className="h-8 w-8 text-amber-800" />
+          <BarChartIcon className="h-8 w-8 text-amber-800" />
         </div>
         <p className="text-4xl font-bold mb-2">KD 54M+</p>
         <p>Assets Under Management</p>
@@ -44,7 +43,7 @@ export const CompanyHighlights = () => {
           <LayoutIcon className="h-8 w-8 text-amber-800" />
         </div>
         <p className="text-4xl font-bold mb-2">65 </p>
-        <p>Gross Leasable Area (thousand) sqft </p>
+        <p>Gross Leasable Area (thousand) sq meters </p>
       </div>
 
       {/* Block 4 */}

@@ -1,0 +1,52 @@
+{
+    "common": {
+        "properties": "Properties",
+        "about": "About",
+        "media": "Media",
+        "contact": "Contact",
+        "viewAll": "View All",
+        "readMore": "Read More",
+        "learnMore": "Learn More"
+    },
+    "hero": {
+        "title": "Innovative Solutions Traditional Values",
+        "subtitle": "Your Gateway to Real Estate"
+    },
+    "about": {
+        "companyName": "ERADAT",
+        "description": "Your Gateway to Real Estate. ERADAT is a premier real estate investment and development company with a proven track record of delivering exceptional properties and strong returns for our investors. Our expertise spans residential, commercial, and mixed-use developments across key markets.",
+        "cta": "Learn More About Us"
+    },
+    "properties": {
+        "title": "PROPERTY SPOTLIGHT",
+        "expectedRoi": "Expected ROI",
+        "term": "Term",
+        "viewDetails": "View Details"
+    },
+    "highlights": {
+        "title": "Why Choose ERADAT",
+        "description": "Our proven track record and investment approach has delivered consistent returns for our clients.",
+        "stats": {
+        "aum": "Assets Under Management",
+        "properties": "Properties",
+        "gla": "Gross Leasable Area (thousand)",
+        "dividendRatio": "Target Dividend Ratio"
+        }
+    },
+    "latestMedia": {
+        "title": "Latest Media",
+        "description": "Stay updated with the latest news, market insights, and company announcements.",
+        "viewAll": "View All News"
+    },
+    "footer": {
+        "description": "Building wealth through strategic real estate investments since 2012.",
+        "quickLinks": "Quick Links",
+        "contactUs": "Contact Us",
+        "employeeLogin": "Employee Login",
+        "copyright": "All rights reserved.",
+        "privacyPolicy": "Privacy Policy",
+        "termsOfService": "Terms of Service",
+        "disclaimer": "Disclaimer"
+    },
+    "direction": "ltr"
+}
