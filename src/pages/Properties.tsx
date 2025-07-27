@@ -118,7 +118,7 @@ const Properties = () => {
         "title": "Al Manar Complex",
         "location": "Farwaniya, Kuwait",
         "type": "Commercial",
-        "image": "/assets/manar_2.jpg",
+        "image": "/assets/manar/manar_3.jpg",
         "description": "Situated at Plot No. 22, Commercial Center, Habib Munawar Street in Farwaniya, Al Manar is a 7-story commercial building that includes a basement, ground, and mezzanine floors. The basement, ground, and mezzanine floors house a diverse range of shops, while the upper floors are designated for office spaces. There is ample parking available on the ground level, accessible from the front, back, and sides of the complex.",
         "roi": 'None',
         "occupancy": 'Farwaniya',
@@ -414,7 +414,10 @@ const Properties = () => {
                     <div
                       key={property.id}
                       className="bg-white rounded-xl shadow-xl overflow-hidden hover:shadow-2xl transition-all cursor-pointer"
-                      onClick={() => setSelectedProperty(property)}
+                      onClick={() => {
+                        setSelectedProperty(property)
+                        window.scrollTo({ top: 0, behavior: 'smooth' })
+                      }}
                     >
                       <div className="relative">
                         <div className="h-[600px]">
@@ -459,6 +462,7 @@ const Properties = () => {
                             onClick={(e) => {
                               e.stopPropagation()
                               setSelectedProperty(property)
+                              window.scrollTo({ top:0, behavior: 'smooth' })
                             }}
                             className="bg-amber-800 hover:bg-amber-900 text-white font-medium py-4 px-8 rounded-md transition-colors inline-flex items-center text-lg"
                           >

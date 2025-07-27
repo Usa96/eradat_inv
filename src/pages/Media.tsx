@@ -201,7 +201,10 @@ const filteredMedia = [...mediaItems]
                     <div
                       key={item.id}
                       className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow flex flex-col md:flex-row cursor-pointer"
-                      onClick={() => setSelectedMedia(item)}
+                      onClick={() => {
+                      setSelectedMedia(item)
+                      window.scrollTo({ top: 0, behavior: 'auto' })
+                    }}
                     >
                       <div className="md:w-2/5 h-64 md:h-auto">
                         <img
@@ -290,7 +293,10 @@ const filteredMedia = [...mediaItems]
                     <div
                       key={item.id}
                       className="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow cursor-pointer"
-                      onClick={() => setSelectedMedia(item)}
+                      onClick={() => {
+                        setSelectedMedia(item)
+                        window.scrollTo({ top: 0, behavior: 'auto' })
+                      }}
                     >
                       <div className="relative h-[300px] overflow-hidden">
                         <img

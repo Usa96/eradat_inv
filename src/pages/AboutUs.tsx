@@ -224,7 +224,7 @@ const AboutUs = () => {
                     Sharia-Compliant Integrity
                   </h3>
                   <p className="text-gray-600 text-xl">
-                    We adhere to Sharia principles in all our dealings—focusing on ethical, transparent, and faith-aligned transactions to preserve investor and partner trust.
+                    We adhere to Sharia principles in all our dealings—focusing on ethical and transparent transactions to preserve investor and partner trust.
                   </p>
                 </div>
                 <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow border-t-4 border-amber-500">
