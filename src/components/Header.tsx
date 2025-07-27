@@ -64,16 +64,16 @@ export const Header = () => {
           <div className={`md:hidden py-4 px-4 backdrop-blur-sm ${hasScrolled ? 'bg-white' : 'bg-black/90'}`}>
             <nav className="flex flex-col space-y-4">
               <Link to="/properties" onClick={() => setIsMenuOpen(false)} className={`font-medium ${hasScrolled ? isActive('/properties') ? 'text-amber-800' : 'text-gray-800 hover:text-amber-800' : isActive('/properties') ? 'text-amber-300' : 'text-white hover:text-amber-100'}`}>
-                {t('nav.properties')}
+                {t('Properties')}
               </Link>
               <Link to="/about" onClick={() => setIsMenuOpen(false)} className={`font-medium ${hasScrolled ? isActive('/about') ? 'text-amber-800' : 'text-gray-800 hover:text-amber-800' : isActive('/about') ? 'text-amber-300' : 'text-white hover:text-amber-100'}`}>
-                {t('nav.about')}
+                {t('About')}
               </Link>
               <Link to="/media" onClick={() => setIsMenuOpen(false)} className={`font-medium ${hasScrolled ? isActive('/media') ? 'text-amber-800' : 'text-gray-800 hover:text-amber-800' : isActive('/media') ? 'text-amber-300' : 'text-white hover:text-amber-100'}`}>
-                {t('nav.media')}
+                {t('Media')}
               </Link>
               <Link to="/contact" onClick={() => setIsMenuOpen(false)} className={`font-medium ${hasScrolled ? isActive('/contact') ? 'text-amber-800' : 'text-gray-800 hover:text-amber-800' : isActive('/contact') ? 'text-amber-300' : 'text-white hover:text-amber-100'}`}>
-                {t('nav.contact')}
+                {t('Contact')}
               </Link>
             </nav>
           </div>
