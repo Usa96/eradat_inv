@@ -1,14 +1,6 @@
 {
-    "properties": "Properties",
-    "about": "About",
-    "media": "Media",
-    "contact": "Contact",
-    "viewAll": "View All",
-    "readMore": "Read More",
-    "learnMore": "Learn More",
-    "hero_title": "Innovative Solutions Traditional Values",
-    "hero_subtitle": "Your Gateway to Real Estate",
-    "companyName": "ERADAT",
-    "companyDescription": "Your Gateway to Real Estate. ERADAT is a premier real estate investment...",
-    "companyCta": "Learn More About Us",
+"Properties": "Properties",
+"About": "About",
+"Media": "Media",
+"Contact": "Contact"
 }
