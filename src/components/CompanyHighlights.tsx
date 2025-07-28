@@ -1,6 +1,8 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { BarChartIcon, BuildingIcon, LayoutIcon, PercentIcon } from 'lucide-react';
 export const CompanyHighlights = () => {
+  const { t, i18n } = useTranslation();
   return <section
   className="relative py-24 bg-fixed bg-cover bg-center text-white"
   style={{ backgroundImage: "url('/assets/company_highlights.avif')" }}>
@@ -10,11 +12,10 @@ export const CompanyHighlights = () => {
   <div className="relative z-10 container mx-auto px-4">
     <div className="text-center mb-16">
       <h2 className="text-3xl font-bold mb-4 text-white">
-        Why Choose ERADAT
+        {t('KPI-Title')}
       </h2>
       <p className="text-white max-w-2xl mx-auto text-xl">
-        Our proven track record and investment approach has delivered
-        consistent returns for our clients.
+        {t('KPI-Desc')}
       </p>
     </div>
 
@@ -25,7 +26,7 @@ export const CompanyHighlights = () => {
           <BarChartIcon className="h-8 w-8 text-white" />
         </div>
         <p className="text-4xl font-bold mb-2">KD 54M+</p>
-        <p>Assets Under Management</p>
+        <p>{t('KPI-AUM')}</p>
       </div>
 
       {/* Block 2 */}
@@ -34,7 +35,7 @@ export const CompanyHighlights = () => {
           <BuildingIcon className="h-8 w-8 text-white" />
         </div>
         <p className="text-4xl font-bold mb-2">14</p>
-        <p>Properties</p>
+        <p>{t('Properties')}</p>
       </div>
 
       {/* Block 3 */}
@@ -42,8 +43,8 @@ export const CompanyHighlights = () => {
         <div className="bg-yellow-900 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
           <LayoutIcon className="h-8 w-8 text-white" />
         </div>
-        <p className="text-4xl font-bold mb-2">65 </p>
-        <p>Gross Leasable Area (thousand) sq meters </p>
+        <p className="text-4xl font-bold mb-2">65</p>
+        <p>{t('KPI-Area')} </p>
       </div>
 
       {/* Block 4 */}
@@ -52,7 +53,7 @@ export const CompanyHighlights = () => {
           <PercentIcon className="h-8 w-8 text-white" />
         </div>
         <p className="text-4xl font-bold mb-2">90%</p>
-        <p>Target Dividend Ratio</p>
+        <p>{t('KPI-Target-Ratio')}</p>
       </div>
     </div>
   </div>

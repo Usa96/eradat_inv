@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 export const AboutSection = () => {
+  const { t, i18n } = useTranslation();
   return <section id="about" className="relative w-full h-[600px]">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
@@ -14,14 +16,10 @@ export const AboutSection = () => {
             <img src="/assets/white_logo.png" // Replace with your actual filename/path
               alt="ERADAT Logo" className="h-40 mx-auto mb-8"/>
                 <p className="text-xl md:text-xl leading-relaxed mb-8">
-                  ERADAT is a premier real estate
-                  investment company with a proven track record of
-                  delivering strong returns for our
-                  investors. Our expertise spans residential, commercial, and
-                  mixed-use developments across key markets.
+                  {t('home-desc')}
                 </p>
             <Link to="/about" className="inline-block bg-amber-800 hover:bg-amber-900 text-white font-medium py-3 px-8 rounded-md transition-colors">
-              Learn More
+              {t('Learn More')}
             </Link>
           </div>
         </div>

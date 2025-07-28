@@ -1,5 +1,7 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 export const HeroSection = () => {
+  const { t, i18n } = useTranslation();
   return <section className="relative w-full h-screen bg-black text-white">
       {/* Video Background */}
       <div className="absolute inset-0 z-0 bg-black opacity-60" aria-hidden="true"></div>
@@ -16,10 +18,10 @@ export const HeroSection = () => {
             
           </p>
           <h1 className="text-5xl md:text-7xl font-light tracking-wider mb-4">
-            ERADAT
+            {t('ERADAT')}
           </h1>
           <div className="space-y-1 text-xl md:text-lg">
-            <p>International Real Estate Company</p>
+            {t('hero-section-subtitle')}
           </div>
         </div>
     </section>;
