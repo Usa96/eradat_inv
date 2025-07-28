@@ -29,53 +29,68 @@ export const Header = () => {
     <header className={`w-full fixed top-0 z-50 transition-all duration-300 ${hasScrolled ? 'bg-white shadow-md py-4' : 'bg-transparent py-6'}`}>
       <div className={`container mx-auto px-4 flex items-center justify-between ${ i18n.language === 'ar' ? 'flex-row-reverse' : 'flex-row' }`}>
         {/* Left Navigation */}
-        <div className={`container mx-auto px-4 flex items-center justify-between ${ i18n.language === 'ar' ? 'flex-row-reverse' : 'flex-row'}`}>
-        {/* Left Side (Media, Contact, Language) in EN — becomes right side in AR */}
-        <div className="hidden md:flex items-center space-x-8 rtl:space-x-reverse">
-          <Link
-            to="/media"
-            className={`font-medium text-xl transition-colors ${ hasScrolled ? isActive('/media') ? 'text-amber-800' : 'text-gray-800 hover:text-amber-800' : isActive('/media') ? 'text-amber-300' : 'text-white hover:text-amber-100' }`}>
-            {t('Media')}
-          </Link>
-          <Link
-            to="/contact"
-            className={`font-medium text-xl transition-colors ${ hasScrolled ? isActive('/contact') ? 'text-amber-800' : 'text-gray-800 hover:text-amber-800' : isActive('/contact') ? 'text-amber-300' : 'text-white hover:text-amber-100' }`} >
-            {t('Contact')}
-          </Link>
-        </div>
-              
-        {/* Center Logo */}
-        <div className="flex items-center justify-center">
-          <Link to="/">
-            <img
-              src={hasScrolled ? '/assets/logo.png' : '/assets/white_logo.png'}
-              alt="ERADAT Logo"
-              className="h-28 transition-all"
-            />
-          </Link>
-        </div>
+        <div
+  className={`container mx-auto px-4 flex items-center justify-between ${
+    i18n.language === 'ar' ? 'flex-row-reverse' : 'flex-row'
+  }`}
+>
+  {/* Left Side (Media, Contact, Language) in EN — becomes right side in AR */}
+  <div className="hidden md:flex items-center space-x-8 rtl:space-x-reverse">
+    <Link
+      to="/media"
+      className={`font-medium text-xl transition-colors ${ hasScrolled ? isActive('/media') ? 'text-amber-800' : 'text-gray-800 hover:text-amber-800' : isActive('/media') ? 'text-amber-300' : 'text-white hover:text-amber-100' }`}>
+      {t('Media')}
+    </Link>
+    <Link
+      to="/contact"
+      className={`font-medium text-xl transition-colors ${ hasScrolled ? isActive('/contact') ? 'text-amber-800' : 'text-gray-800 hover:text-amber-800' : isActive('/contact') ? 'text-amber-300' : 'text-white hover:text-amber-100' }`} >
+      {t('Contact')}
+    </Link>
 
-        {/* Right Side (Properties, About) in EN — becomes left side in AR */}
-        <div className={`hidden md:flex items-center ${ i18n.language === 'ar' ? 'space-x-reverse space-x-8' : 'space-x-8' }`}>
-          <Link
-            to="/media" className={`font-medium text-xl transition-colors ${
-              hasScrolled  ? isActive('/media')  ? 'text-amber-800' : 'text-gray-800 hover:text-amber-800' : isActive('/media')  ? 'text-amber-300'  : 'text-white hover:text-amber-100'}`}>
-            {t('Media')}
-          </Link>
-          <Link
-            to="/contact"
-            className={`font-medium text-xl transition-colors ${
-              hasScrolled  ? isActive('/contact')  ? 'text-amber-800'  : 'text-gray-800 hover:text-amber-800' : isActive('/contact')  ? 'text-amber-300'  : 'text-white hover:text-amber-100' }`}>
-            {t('Contact')}
-          </Link>
-        </div>
-        </div>
-         {/* Language Toggle - Far Right Edge */}
-          <button
-            onClick={handleLanguageToggle}
-            className={`hidden md:block font-medium text-xl transition-colors ${ hasScrolled  ? 'text-gray-800 hover:text-amber-800'  : 'text-white hover:text-amber-100'} ${i18n.language === 'ar' ? 'order-first' : 'order-last'}`} >
-            {i18n.language === 'en' ? 'العربية' : 'English'}
-          </button>
+    {/* Language Toggle */}
+    {/* <button
+      onClick={handleLanguageToggle}
+      className={`font-medium text-xl transition-colors ${
+        hasScrolled ? 'text-gray-800 hover:text-amber-800' : 'text-white hover:text-amber-100'
+      }`}
+    >
+      {i18n.language === 'en' ? 'العربية' : 'English'}
+    </button> */}
+  </div>
+
+  {/* Center Logo */}
+  <div className="flex items-center justify-center">
+    <Link to="/">
+      <img
+        src={hasScrolled ? '/assets/logo.png' : '/assets/white_logo.png'}
+        alt="ERADAT Logo"
+        className="h-28 transition-all"
+      />
+    </Link>
+  </div>
+
+  {/* Right Side (Properties, About) in EN — becomes left side in AR */}
+  <nav className="hidden md:flex items-center space-x-8 rtl:space-x-reverse">
+    <Link
+      to="/properties"
+      className={`font-medium text-xl transition-colors ${ hasScrolled ? isActive('/properties') ? 'text-amber-800' : 'text-gray-800 hover:text-amber-800' : isActive('/properties') ? 'text-amber-300' : 'text-white hover:text-amber-100' }`} >
+      {t('Properties')}
+    </Link>
+    <Link
+      to="/about" className={`font-medium text-xl transition-colors ${ hasScrolled ? isActive('/about') ? 'text-amber-800' : 'text-gray-800 hover:text-amber-800' : isActive('/about') ? 'text-amber-300': 'text-white hover:text-amber-100'}`}>
+      {t('About')}
+    </Link>
+  </nav>
+
+  {/* Mobile menu button remains unchanged */}
+  <button
+    className={`md:hidden ${hasScrolled ? 'text-gray-800' : 'text-white'}`}
+    onClick={() => setIsMenuOpen(!isMenuOpen)}
+  >
+    {isMenuOpen ? <XIcon size={24} /> : <MenuIcon size={24} />}
+  </button>
+</div>
+
 
         {/* Mobile nav */}
         {isMenuOpen && (
@@ -95,7 +110,13 @@ export const Header = () => {
               </Link>
               
               {/* Language Toggle in Mobile Menu */}
-              <button  onClick={() => { handleLanguageToggle(); setIsMenuOpen(false); }} className={`font-medium text-left ${hasScrolled ? 'text-gray-800 hover:text-amber-800' : 'text-white hover:text-amber-100'}`}>
+              <button 
+                onClick={() => {
+                  handleLanguageToggle();
+                  setIsMenuOpen(false);
+                }}
+                className={`font-medium text-left ${hasScrolled ? 'text-gray-800 hover:text-amber-800' : 'text-white hover:text-amber-100'}`}
+              >
                 {i18n.language === 'en' ? 'العربية' : 'English'}
               </button>
             </nav>
