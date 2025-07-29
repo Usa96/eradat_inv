@@ -3,6 +3,7 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 @import '@fontsource/crimson-text';
+@import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic&display=swap');
 /* DO NOT DELETE THESE TAILWIND IMPORTS, OTHERWISE THE STYLING WILL NOT RENDER AT ALL */
 
 body {

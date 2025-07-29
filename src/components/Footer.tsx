@@ -1,28 +1,22 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { SiX } from 'react-icons/si';
+import { useTranslation } from 'react-i18next';
 import { InstagramIcon, LinkedinIcon, MailIcon, PhoneIcon, MapPinIcon} from 'lucide-react';
 export const Footer = () => {
+  const { t, i18n } = useTranslation();
   return <footer className="bg-[#f9f6f2] text-gray-800 px-6 py-16 text-sm">
   {/* Top section: name + description */}
-  <div className="text-left max-w-7xl mx-auto mb-12">
-    <h2 className="text-2xl font-light tracking-wide mb-4">ERADAT International Real Estate Company </h2>
+  <div className={`max-w-7xl mx-auto mb-12 ${i18n.language === 'ar' ? 'text-right' : 'text-left'}`}>
+    <h2 className="text-2xl font-light tracking-wide mb-4">{t('Footer-title')}</h2>
     <p className="leading-relaxed text-gray-700 text-xl">
-      A Kuwaiti Shareholding Company, incorporated in 2006, with a current paid-up capital of KD 13.2 million.
-      Commercial Registration no. 112646
+      {t('Footer-description')}
     </p>
   </div>
 
-  {/* Bottom section: 3 columns */}
   <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
-    
-    {/* Logo Column */}
     <div className="flex flex-col items-center md:items-start">
-      <img
-        src="/assets/logo.png"
-        alt="ERADAT Logo"
-        className="h-40 mb-4"
-      />
+      <img src="/assets/logo.png" alt="ERADAT Logo" className="h-40 mb-4"/>
       <div className="flex gap-4">
         <a href="https://x.com/Eradatkw" aria-label="Twitter" className="text-gray-700 hover:text-black transition">
           <SiX size={20} />
@@ -36,35 +30,42 @@ export const Footer = () => {
       </div>
     </div>
 
-    {/* Quick Links */}
-    <div className="text-center md:text-left">
-      <h3 className="uppercase text-xl font-semibold tracking-widest mb-4">Quick Links</h3>
+    <div className={`${i18n.language === 'ar' ? 'text-right' : 'text-left'} text-center md:text-left`}>
+      <h3 className="uppercase text-xl font-semibold tracking-widest mb-4 flex items-center gap-2 ${i18n.language === 'ar' ? 'flex-row-reverse justify-end' : 'justify-start'}`}">
+        {t('Quick-Links')}
+      </h3>
       <ul className="space-y-2 text-xl">
-        <li><Link to="/properties" className="hover:underline">Properties</Link></li>
-        <li><Link to="/about" className="hover:underline">About Us</Link></li>
-        <li><Link to="/media" className="hover:underline">Media</Link></li>
-        <li><Link to="/contact" className="hover:underline">Contact</Link></li>
+        <li className={`flex items-center gap-2 ${i18n.language === 'ar' ? 'flex-row-reverse justify-end' : 'justify-start'}`}>
+          <Link to="/properties" className="hover:underline">{t('Properties')}</Link></li>
+        <li className={`flex items-center gap-2 ${i18n.language === 'ar' ? 'flex-row-reverse justify-end' : 'justify-start'}`}>
+          <Link to="/about" className="hover:underline">{t('About')}</Link></li>
+        <li className={`flex items-center gap-2 ${i18n.language === 'ar' ? 'flex-row-reverse justify-end' : 'justify-start'}`}>
+          <Link to="/media" className="hover:underline">{t('Media')}</Link></li>
+        <li className={`flex items-center gap-2 ${i18n.language === 'ar' ? 'flex-row-reverse justify-end' : 'justify-start'}`}>
+          <Link to="/contact" className="hover:underline">{t('Contact')}</Link></li>
       </ul>
     </div>
 
-    {/* Contact Info */}
-    <div className="text-center md:text-left">
-      <h3 className="uppercase text-xl font-semibold tracking-widest mb-4">Contact</h3>
+    <div className={`${i18n.language === 'ar' ? 'text-right' : 'text-left'} text-center md:text-left`}>
+      <h3 className="uppercase text-xl font-semibold tracking-widest mb-4 flex items-center gap-2 ${i18n.language === 'ar' ? 'flex-row-reverse justify-end' : 'justify-start'}`}">
+        {t('Contact')}
+      </h3>
       <ul className="space-y-3 text-xl">
-        <li className="flex items-center justify-center md:justify-start gap-2">
+        <li className={`flex items-center gap-2 ${i18n.language === 'ar' ? 'flex-row-reverse justify-end' : 'justify-start'}`}>
           <MapPinIcon className="h-4 w-4" />
-          <span>Salhiya Complex, Qibla, Kuwait</span>
+          <span>{t('Address')}</span>
         </li>
-        <li className="flex items-center justify-center md:justify-start gap-2">
+        <li className={`flex items-center gap-2 justify-start'}`}>
           <PhoneIcon className="h-4 w-4" />
-          <span>(+965) 2239 66666</span>
+          <span dir="ltr">{t('Phone')}</span>
         </li>
-        <li className="flex items-center justify-center md:justify-start gap-2">
+        <li className={`flex items-center gap-2 justify-start'}`}>
           <MailIcon className="h-4 w-4" />
-          <span>info@eradat.me</span>
+          <span>{t('Email')}</span>
         </li>
       </ul>
     </div>
+
   </div>
 
   {/* Bottom bar */}
