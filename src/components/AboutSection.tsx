@@ -13,7 +13,7 @@ export const AboutSection = () => {
       <div className="absolute inset-0 flex items-center justify-center z-10">
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-4xl mx-auto text-white">
-            <img src="/assets/white_logo.png" // Replace with your actual filename/path
+            <img src="/assets/white_logo.png"
               alt="ERADAT Logo" className="h-40 mx-auto mb-8"/>
                 <p className="text-xl md:text-xl leading-relaxed mb-8">
                   {t('home-desc')}

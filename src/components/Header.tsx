@@ -28,10 +28,8 @@ export const Header = () => {
   return (
     <header className={`w-full fixed top-0 z-50 transition-all duration-300 ${hasScrolled ? 'bg-white shadow-md py-4' : 'bg-transparent py-6'}`}>
       <div className={`container mx-auto flex items-center justify-between ${ i18n.language === 'ar' ? 'flex-row-reverse' : 'flex-row' }`}>
-        {/* Left Navigation */}
         <div className={`relative container mx-auto flex items-center justify-between ${
             i18n.language === 'ar' ? 'flex-row-reverse' : 'flex-row'}`}>
-          {/* Right Side (Properties, About) in EN — becomes left side in AR */}
           <nav className="hidden md:flex items-center space-x-8 rtl:space-x-reverse">
             <Link
               to="/properties"

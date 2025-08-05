@@ -43,5 +43,66 @@
 "Quick-Links":"Quick Links",
 "Address":"Salhiya Complex, Qibla, Kuwait.",
 "Phone":"+965 22396666",
-"Email":"info@eradat.me"
+"Email":"info@eradat.me",
+"About-Us": "ABOUT US",
+"founded-year": "2006",
+"founded": "Founded",
+"HQ": "Headquarters",
+"capital-amount": "KD 13.2m",
+"paid-up-capital": "Paid-up Capital",
+"aum-amount": "KD 54m +",
+"target-dividend-ratio": "Target Dividend Ratio",
+"years": "Years of Experience",
+"our-approach-title": "Our Approach",
+"our-approach-description": "We use time-tested investment principles to create exceptional value for our investors.",
+"our-approach-img-alt": "Team collaboration",
+"our-vision-title": "Our Vision",
+"our-vision-description": "To create a real estate leading company that represents a pass-through vehicle of quality income-producing assets for a diversified investor base with exposure to frequent (quarterly/monthly) and sustainable cash distributions.",
+"our-mission-title": "Our Mission",
+"our-mission-description": "To build a diversified portfolio of quality income-producing properties. To expand its reach and presence of its underlying portfolio across sectors, property type and countries within the GCC.",
+"our-strategy-title": "Our Strategy",
+"our-strategy-description": "We focus on value-add opportunities in high-growth markets by identifying properties with strong appreciation potential.",
+"core-values-title": "Our Core Values",
+"core-values-subtitle": "These principles guide every decision we make and every relationship we build.",
+"core-values": {
+    "integrity-title": "Sharia-Compliant Integrity",
+    "integrity-desc": "We adhere to Sharia principles in all our dealings—focusing on ethical and transparent transactions to preserve investor and partner trust.",
+    "growth-title": "Sustainable Growth",
+    "growth-desc": "We build a diversified portfolio of quality, income-generating real estate across the GCC—anchored in long-term stability and sustainable returns.",
+    "performance-title": "Investor-Centric Performance",
+    "performance-desc": "Our aim is to be a vehicle for consistent, periodic distributions—ensuring regular, reliable income to our stakeholder base."
+},
+    "leadership": {
+        "title": "Leadership Team",
+        "subtitle": "Meet the individuals guiding our strategic vision and operations.",
+        "viewProfile": "View Profile",
+        "members": [
+            {
+                "name": "Dr. Sulaiman Tareq Al AbdulJader",
+                "title": "Chairman",
+                "bio": "A seasoned leader in finance, investment, and academia. He serves on the boards of major firms and advises institutions. His research focuses on alternative investments and financial economics."
+            },
+            {
+                "name": "Waleed Hamad Al Sumait",
+                "title": "Vice Chairman",
+                "bio": "Brings over 20 years of experience in investment and financial services. He holds a BBA from the U.S. and several certifications, with active participation in top-tier industry conferences."
+            },
+            {
+                "name": "Bader Al Hajeri",
+                "title": "Chief Executive Officer",
+                "bio": "Has 16+ years of experience in real estate and public relations. Oversees real estate investments and maintains strong relationships across government and private sectors."
+            },
+            {
+                "name": "Sulaiman Khaled Aloudah",
+                "title": "Board Member",
+                "bio": "Over 15 years of expertise in corporate finance, M&A, and strategic planning. Certified in CGIA, CST, and CIDA, with strong IFRS knowledge and board-level insight."
+            },
+            {
+                "name": "Saad Nasser Al Muneefi",
+                "title": "Board Member",
+                "bio": "An experienced finance executive with a BBA and 15+ years in Kuwait’s financial sector. Board member of First Securities Brokerage and Global Investment House."
+            }
+        ]
+    }
 }
+

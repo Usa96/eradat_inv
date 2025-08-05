@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import {
   LinkedinIcon,
   ChevronRightIcon,
@@ -21,7 +22,10 @@ interface LeaderProfile {
   bio: string;
   linkedin?: string;
 }
+
 const AboutUs = () => {
+  const { t, i18n } = useTranslation();
+  const isRTL = i18n.language === 'ar';
   const leadershipTeam: LeaderProfile[] = [{
     id: 1,
     name: 'Dr. Sulaiman Tareq Al AbdulJader',
@@ -55,18 +59,13 @@ const AboutUs = () => {
   }]
 
   return <main>
-      {/* Hero Section */}
       <section
         className="relative h-screen bg-cover bg-center"
-        style={{ backgroundImage: "url('/assets/about_hero.jpg')" }} // replace with correct path
-      >
-        {/* Overlay for contrast */}
+        style={{ backgroundImage: "url('/assets/about_hero.jpg')" }}>
         <div className="absolute inset-0 bg-black/30 z-0" />
-
-        {/* Title Text at Bottom Left */}
-        <div className="absolute bottom-10 left-10 z-10">
+        <div className={`absolute bottom-10 z-10 ${ i18n.language === 'ar' ? 'right-10 text-right' : 'left-10 text-left'}`}>
           <h1 className="text-white text-4xl md:text-6xl font-light tracking-widest">
-            ABOUT US 
+            {t('About-Us')}
           </h1>
         </div>
       </section>
@@ -85,54 +84,55 @@ const AboutUs = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-white">
             {/* Row 1 */}
             <div className="border-r border-white/20 px-6 py-10">
-              <h3 className="text-5xl md:text-6xl font-light mb-4">2006</h3>
+              <h3 className="text-5xl md:text-6xl font-light mb-4">{t('founded-year')}</h3>
               <p className="text-xl tracking-wider uppercase text-gray-300">
-                FOUNDED
+                {t('founded')}
               </p>
             </div>
             <div className="border-r border-white/20 px-6 py-10">
-              <h3 className="text-5xl md:text-6xl font-light mb-4">Kuwait</h3>
+              <h3 className="text-5xl md:text-6xl font-light mb-4">{t('Kuwait')}</h3>
               <p className="text-xl tracking-wider uppercase text-gray-300">
-                HEADQUARTERED IN
+                {t('HQ')}
               </p>
             </div>
             <div className="px-6 py-10">
-              <h3 className="text-5xl md:text-6xl font-light mb-4">KD 13.2 M</h3>
+              <h3 className="text-5xl md:text-6xl font-light mb-4">{t('capital-amount')}</h3>
               <p className="text-xl tracking-wider uppercase text-gray-300">
-                PAID UP CAPITAL
+                {t('paid-up-capital')}
               </p>
             </div>
             {/* Row 2 */}
             <div className="border-r border-white/20 px-6 py-10">
-              <h3 className="text-5xl md:text-6xl font-light mb-4">KD 54 M</h3>
+              <h3 className="text-5xl md:text-6xl font-light mb-4">{t('aum-amount')}</h3>
               <p className="text-xl tracking-wider uppercase text-gray-300">
-                TOTAL ASSETS UNDER MANAGEMENT
+                {t('total-assets-under-management')}
               </p>
             </div>
             <div className="border-r border-white/20 px-6 py-10">
               <h3 className="text-5xl md:text-6xl font-light mb-4">90%</h3>
               <p className="text-xl tracking-wider uppercase text-gray-300">
-                TARGET DIVIDEND RATIO
+                {t('target-dividend-ratio')}
               </p>
             </div>
             <div className="px-6 py-10">
               <h3 className="text-5xl md:text-6xl font-light mb-4">20</h3>
               <p className="text-xl tracking-wider uppercase text-gray-300">
-                YEARS OF EXPERIENCE
+                {t('years')}
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-gray-50" dir={isRTL ? 'rtl' : 'ltr'}>
         <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center mb-16">
+          <div
+            className={`max-w-3xl mx-auto mb-16 ${ i18n.language === 'ar' ? 'text-center' : 'text-center' }`}>
             <h2 className="text-4xl font-bold mb-6 text-gray-900">
-              Our Approach
+              {t('our-approach-title')}
             </h2>
             <p className="text-xl text-gray-600">
-              We use time-tested investment principles  to create exceptional value for our investors.
+              {t('our-approach-description')}
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -140,7 +140,7 @@ const AboutUs = () => {
               <div className="aspect-square rounded-full overflow-hidden border-8 border-white shadow-xl">
                 <img
                   src="/assets/our_approach.jpg"
-                  alt="Team collaboration"
+                  alt={t('our-approach-img-alt')}
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -148,52 +148,41 @@ const AboutUs = () => {
                 <UsersIcon className="h-10 w-10" />
               </div>
             </div>
-            <div>
-              <div className="space-y-8">
-                <div className="flex">
-                  <div className="flex-shrink-0 mr-4">
-                    <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center">
-                      <TargetIcon className="h-6 w-6 text-amber-800" />
-                    </div>
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-semibold mb-2 text-gray-900">
-                      Our Vision
-                    </h3>
-                    <p className="text-gray-600 text-xl">
-                      To create a real estate leading company that represents a pass-through vehicle of quality income-producing assets for a diversified investor base with exposure to frequent (quarterly/monthly) and sustainable cash distributions.
-                    </p>
+            <div className="space-y-8">
+              {/* Vision */}
+              <div className={`flex ${isRTL ? 'flex-row-reverse' : ''}`}>
+                <div className="flex-shrink-0 mr-4">
+                  <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center">
+                    <TargetIcon className="h-6 w-6 text-amber-800" />
                   </div>
                 </div>
-                <div className="flex">
-                  <div className="flex-shrink-0 mr-4">
-                    <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center">
-                      <CompassIcon className="h-6 w-6 text-amber-800" />
-                    </div>
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-semibold mb-2 text-gray-900">
-                      Our Mission
-                    </h3>
-                    <p className="text-gray-600 text-xl">
-                      To build a diversified portfolio of quality income-producing properties. To expand its reach and presence of its underlying portfolio across sectors, property type and countries within the GCC.
-                    </p>
+                <div>
+                  <h3 className="text-xl font-semibold mb-2 text-gray-900">{t('our-vision-title')}</h3>
+                  <p className="text-gray-600 text-xl">{t('our-vision-description')}</p>
+                </div>
+              </div>
+              {/* Mission */}
+              <div className={`flex ${isRTL ? 'flex-row-reverse' : ''}`}>
+                <div className="flex-shrink-0 mr-4">
+                  <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center">
+                    <CompassIcon className="h-6 w-6 text-amber-800" />
                   </div>
                 </div>
-                <div className="flex">
-                  <div className="flex-shrink-0 mr-4">
-                    <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center">
-                      <BuildingIcon className="h-6 w-6 text-amber-800" />
-                    </div>
+                <div>
+                  <h3 className="text-xl font-semibold mb-2 text-gray-900">{t('our-mission-title')}</h3>
+                  <p className="text-gray-600 text-xl">{t('our-mission-description')}</p>
+                </div>
+              </div>
+              {/* Strategy */}
+              <div className={`flex ${isRTL ? 'flex-row-reverse' : ''}`}>
+                <div className="flex-shrink-0 mr-4">
+                  <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center">
+                    <BuildingIcon className="h-6 w-6 text-amber-800" />
                   </div>
-                  <div>
-                    <h3 className="text-xl font-semibold mb-2 text-gray-900">
-                      Our Strategy
-                    </h3>
-                    <p className="text-gray-600 text-xl">
-                      We focus on value-add opportunities in high-growth markets by identifying properties with strong appreciation potential.
-                    </p>
-                  </div>
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold mb-2 text-gray-900">{t('our-strategy-title')}</h3>
+                  <p className="text-gray-600 text-xl">{t('our-strategy-description')}</p>
                 </div>
               </div>
             </div>
@@ -201,18 +190,16 @@ const AboutUs = () => {
         </div>
       </section>
 
-      {/* Vision & Mission Section */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <section className="py-20">
             <div className="container mx-auto px-4">
               <div className="text-center mb-16">
                 <h2 className="text-4xl font-bold mb-6 text-gray-900">
-                  Our Core Values
+                  {t('core-values-title')}
                 </h2>
                 <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                  These principles guide every decision we make and every
-                  relationship we build.
+                  {t('core-values-subtitle')}
                 </p>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -221,32 +208,34 @@ const AboutUs = () => {
                     <HeartIcon className="h-8 w-8 text-amber-800" />
                   </div>
                   <h3 className="text-2xl font-semibold mb-4 text-gray-900">
-                    Sharia-Compliant Integrity
+                    {t('core-values.integrity-title')}
                   </h3>
                   <p className="text-gray-600 text-xl">
-                    We adhere to Sharia principles in all our dealings—focusing on ethical and transparent transactions to preserve investor and partner trust.
+                    {t('core-values.integrity-desc')}
                   </p>
                 </div>
+
                 <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow border-t-4 border-amber-500">
                   <div className="w-16 h-16 bg-amber-50 rounded-full flex items-center justify-center mb-6">
                     <AwardIcon className="h-8 w-8 text-amber-800" />
                   </div>
                   <h3 className="text-2xl font-semibold mb-4 text-gray-900">
-                    Sustainable Growth
+                    {t('core-values.growth-title')}
                   </h3>
                   <p className="text-gray-600 text-xl">
-                    We build a diversified portfolio of quality, income-generating real estate across the GCC—anchored in long-term stability and sustainable returns.
+                    {t('core-values.growth-desc')}
                   </p>
                 </div>
+
                 <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow border-t-4 border-amber-500">
                   <div className="w-16 h-16 bg-amber-50 rounded-full flex items-center justify-center mb-6">
                     <BrainIcon className="h-8 w-8 text-amber-800" />
                   </div>
                   <h3 className="text-2xl font-semibold mb-4 text-gray-900">
-                    Investor-Centric Performance
+                    {t('core-values.performance-title')}
                   </h3>
                   <p className="text-gray-600 text-xl">
-                    Our aim is to be a vehicle for consistent, periodic distributions—ensuring regular, reliable income to our stakeholder base.
+                    {t('core-values.performance-desc')}
                   </p>
                 </div>
               </div>
@@ -259,36 +248,54 @@ const AboutUs = () => {
       <section className="py-16 bg-amber-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Our Leadership</h2>
+            <h2 className="text-3xl font-bold mb-4">{t('leadership.title')}</h2>
             <p className="text-gray-700 max-w-2xl mx-auto">
-              Meet the experienced team guiding ERADAT's vision and
-              strategy.
+              {t('leadership.subtitle')}
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {leadershipTeam.map(leader => <div key={leader.id} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+            {leadershipTeam.map(leader => (
+              <div
+                key={leader.id}
+                  className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow"
+              >
                 <div className="h-64 overflow-hidden">
-                  <img src={leader.image} alt={leader.name} className="w-full h-full object-cover" />
+                  <img
+                    src={leader.image}
+                    alt={leader.name}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-semibold text-gray-900">
-                    {leader.name}
-                  </h3>
-                  <p className="text-amber-800 mb-4">{leader.title}</p>
-                  <p className="text-gray-700 mb-4 text-xl">{leader.bio}</p>
-                  <div className="flex justify-between items-center">
-                    {leader.linkedin && <a href={leader.linkedin} className="inline-flex items-center text-amber-900 hover:text-amber-700 font-medium" aria-label={`${leader.name}'s LinkedIn profile`}>
-                        <LinkedinIcon size={20} />
-                      </a>}
-                    <Link to={`/team/${leader.id}`} className="inline-block text-amber-900 hover:text-amber-700 font-medium">
-                      View Profile
-                    </Link>
-                  </div>
+            <h3 className="text-xl font-semibold text-gray-900">
+              {leader.name}
+            </h3>
+            <p className="text-amber-800 mb-4">{leader.title}</p>
+            <p className="text-gray-700 mb-4 text-xl">{leader.bio}</p>
+            <div className="flex justify-between items-center">
+              {leader.linkedin && (
+                <a
+                  href={leader.linkedin}
+                  className="inline-flex items-center text-amber-900 hover:text-amber-700 font-medium"
+                  aria-label={`${leader.name}'s LinkedIn profile`}
+                >
+                  <LinkedinIcon size={20} />
+                </a>
+              )}
+              <Link
+                to={`/team/${leader.id}`}
+                className="inline-block text-amber-900 hover:text-amber-700 font-medium"
+              >
+                {t('leadership.viewProfile')}
+              </Link>
+            </div>
                 </div>
-              </div>)}
+              </div>
+            ))}
           </div>
         </div>
       </section>
+
     </main>;
 };
 export default AboutUs;
